@@ -1,0 +1,7 @@
+route_id,host_route,symbiont_route,other_route,is_prespecified_route,source_equal_rate,rank_by_source_equal,route_map
+R1,scaffold,injection,transition,True,0.76945,1,H->scaffold; S->injection; O->transition
+R2,scaffold,transition,injection,False,0.414318,2,H->scaffold; S->transition; O->injection
+R3,injection,scaffold,transition,False,0.343799,3,H->injection; S->scaffold; O->transition
+R4,transition,injection,scaffold,False,0.192689,4,H->transition; S->injection; O->scaffold
+R5,transition,scaffold,injection,False,0.132743,5,H->transition; S->scaffold; O->injection
+R6,injection,transition,scaffold,False,0.048614,6,H->injection; S->transition; O->scaffold

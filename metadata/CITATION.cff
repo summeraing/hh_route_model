@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated manuscript and repository DOI once available."
+title: "Core calculation code for: Route-partitioned integration reconciles scaffold continuity with energetic innovation in eukaryogenesis"
+authors:
+  - family-names: "Xia"
+    given-names: "Zhiqiang"
+date-released: "2026-05-07"
+version: "v77-core-calc-only"
