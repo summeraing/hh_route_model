@@ -1,0 +1,19 @@
+marker_id,query_terms,compartment_class,route_expectation,interpretation_rule,max_per_group
+IBA57,IBA57,mitochondrial_integration,alpha_enriched,Support localized energetic incorporation if eukaryotic terminals are preferentially nearest to alphaproteobacteria,60
+ISCA1,ISCA1,mitochondrial_integration,alpha_enriched,Support localized energetic incorporation if eukaryotic terminals are preferentially nearest to alphaproteobacteria,60
+ISCA2,ISCA2,mitochondrial_integration,boundary_or_mosaic,Boundary marker; heterogeneous or non-alpha signal is not counted against localized incorporation,60
+ISCU,ISCU|ISU1|ISU2,mitochondrial_integration,alpha_enriched,Support localized energetic incorporation if eukaryotic terminals are preferentially nearest to alphaproteobacteria,60
+NFS1,NFS1|ISCS,mitochondrial_integration,alpha_enriched_or_mixed,Supportive if alpha-enriched but interpreted cautiously if broad bacterial,60
+FDX1_FDX2,FDX1|FDX2|ferredoxin,mitochondrial_integration,boundary_or_mosaic,Boundary marker; broad bacterial signal is expected and reported,60
+GLRX5,GLRX5|glutaredoxin-related protein 5,mitochondrial_integration,alpha_enriched_or_mixed,Supportive if alpha-enriched but interpreted cautiously if broad bacterial,60
+ABCB7_ATM1,ABCB7|ATM1|ATP-binding cassette sub-family B member 7,interface_upstream,boundary_or_mosaic,Interface marker; mixed signal is expected and reported,60
+NFU1,NFU1|NFU1 iron-sulfur cluster scaffold,mitochondrial_integration,alpha_enriched_or_mixed,Supportive if alpha-enriched but interpreted cautiously if broad bacterial,60
+BOLA3,BOLA3,mitochondrial_integration,alpha_enriched_or_mixed,Supportive if alpha-enriched but interpreted cautiously if broad bacterial,60
+NUBPL,NUBPL|IND1,mitochondrial_integration,alpha_enriched_or_mixed,Supportive if alpha-enriched but interpreted cautiously if broad bacterial,60
+LYRM4_ISD11,LYRM4|ISD11,mitochondrial_integration,alpha_enriched_or_mixed,Supportive if alpha-enriched but interpreted cautiously if broad bacterial,60
+CIAO1,CIAO1,cytosolic_CIA,nonalpha_archaea_or_mosaic,Cytosolic CIA marker; non-alpha/archaeal/weak signal is expected and reported,60
+CIAO2B,CIAO2B|FAM96B,cytosolic_CIA,nonalpha_archaea_or_mosaic,Cytosolic CIA marker; non-alpha/archaeal/weak signal is expected and reported,60
+CIAO3,CIAO3|NARFL,cytosolic_CIA,nonalpha_archaea_or_mosaic,Cytosolic CIA marker; non-alpha/archaeal/weak signal is expected and reported,60
+MMS19,MMS19,cytosolic_CIA,nonalpha_archaea_or_mosaic,Cytosolic CIA marker; non-alpha/archaeal/weak signal is expected and reported,60
+NUBP1_NBP35,NUBP1|NBP35,cytosolic_CIA,nonalpha_archaea_or_mosaic,Cytosolic CIA marker; non-alpha/archaeal/weak signal is expected and reported,60
+NUBP2_CFD1,NUBP2|CFD1|NAR1,cytosolic_CIA,nonalpha_archaea_or_mosaic,Cytosolic CIA marker; non-alpha/archaeal/weak signal is expected and reported,60

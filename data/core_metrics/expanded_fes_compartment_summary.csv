@@ -1,0 +1,10 @@
+analysis_set,run_label,compartment_class,estimable_markers,mean_alpha_fraction,mean_archaea_fraction,mean_nonalpha_bacteria_fraction,markers_alpha_fraction_ge_0_5
+full_run,fixed_LGFR6,cytosolic_CIA,3,0.0,0.2722222222222222,0.7277777777777779,0
+full_run,fixed_LGFR6,interface_upstream,1,0.3166666666666666,0.2333333333333333,0.45,0
+full_run,fixed_LGFR6,mitochondrial_integration,10,0.6183333333333334,0.04833333333333332,0.3333333333333333,6
+full_run,model_finder,cytosolic_CIA,3,0.0,0.2722222222222222,0.7277777777777779,0
+full_run,model_finder,interface_upstream,1,0.3166666666666666,0.2333333333333333,0.45,0
+full_run,model_finder,mitochondrial_integration,10,0.53,0.04666666666666664,0.42333333333333334,5
+independent_fixed_rerun,fixed_LGFR6,cytosolic_CIA,3,0.0,0.3,0.7000000000000001,0
+independent_fixed_rerun,fixed_LGFR6,interface_upstream,1,0.4,0.2,0.4,0
+independent_fixed_rerun,fixed_LGFR6,mitochondrial_integration,10,0.5533333333333333,0.08333333333333333,0.3633333333333333,5
