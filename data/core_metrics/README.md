@@ -12,3 +12,12 @@ Files:
 - `agreement_summary.csv`
 - `route_support_summary.csv`
 - `adjudication_summary.csv`
+- `continuous_donor_role_probability_matrix.csv`
+- `continuous_route_assignment_diagnostic.csv`
+- `continuous_route_bootstrap_diagnostic.csv`
+- `expanded_fes_compartment_summary.csv`
+- `expanded_fes_fixed_rerun_neighbor_summary.csv`
+- `expanded_fes_full_neighbor_summary.csv`
+- `expanded_fes_marker_interpretation.csv`
+- `expanded_fes_marker_manifest.csv`
+- `expanded_fes_retrieval_summary.csv`

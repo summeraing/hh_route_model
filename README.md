@@ -11,7 +11,9 @@ Correspondence: zqiangx@gmail.com
 
 - `code/hh_route_model_formalism.py`: route-support and H-h formalism helper functions.
 - `code/reproduce_core_metrics.py`: small validator that reads the derived calculation tables and prints the locked audit-completed metrics.
-- `data/core_metrics/`: compact derived tables for route specificity, frozen null boundary, dependency collapse and independent-coding agreement.
+- `code/reproduce_continuous_route_diagnostic.py`: validator for the continuous donor-role probability diagnostic.
+- `code/run_expanded_fes_validation.py`: UniProt/MAFFT/IQ-TREE workflow used for the expanded Fe-S marker-tree validation; this script requires network access and external phylogenetic tools.
+- `data/core_metrics/`: compact derived tables for route specificity, frozen null boundary, dependency collapse, independent-coding agreement, continuous donor-role diagnostics and expanded Fe-S validation summaries.
 - `metadata/`: manifest and citation metadata.
 
 ## Not included
@@ -24,6 +26,13 @@ The full Source Data workbook and journal upload files remain in the submission 
 
 ```bash
 python code/reproduce_core_metrics.py
+python code/reproduce_continuous_route_diagnostic.py
+```
+
+The expanded Fe-S workflow is not a lightweight quick check because it retrieves homologues and calls external alignment/tree-building tools. The script is included for transparency and rerun planning:
+
+```bash
+python code/run_expanded_fes_validation.py --help
 ```
 
 Expected core outputs:
@@ -34,3 +43,10 @@ Expected core outputs:
 - margin over q97.5 boundary: 0.203466
 - donor-class agreement: 0.771104; kappa = 0.464655
 - functional-class agreement: 0.793831; kappa = 0.466401
+
+Expected continuous diagnostic outputs:
+
+- host -> scaffold: source-equal probability = 0.540984; margin = 0.088525
+- symbiont -> energetic incorporation: source-equal probability = 0.967320; margin = 0.934641
+- other -> transition: source-equal probability = 0.761905; margin = 0.619048
+- joint bootstrap probability that all three prespecified roles remain top-ranked: 0.999800
