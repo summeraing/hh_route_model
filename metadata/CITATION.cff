@@ -1,4 +1,4 @@
-cff-version: 1.2.0
+﻿cff-version: 1.2.0
 message: "If you use this repository, please cite the associated manuscript and archived repository DOI."
 title: "Code, derived tables and structural-interactivity outputs for a route-resolved eukaryogenesis analysis"
 authors:
@@ -6,4 +6,5 @@ authors:
     given-names: "Zhiqiang"
 date-released: "2026-06-08"
 version: "af3-structural-interactivity-update"
-doi: "10.5281/zenodo.20453583"
+doi: "10.5281/zenodo.20453582"
+
