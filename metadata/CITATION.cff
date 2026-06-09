@@ -1,9 +1,9 @@
 cff-version: 1.2.0
 message: "If you use this repository, please cite the associated manuscript and archived repository DOI."
-title: "Core calculation code for: Route-partitioned integration reconciles scaffold continuity with energetic innovation in eukaryogenesis"
+title: "Code, derived tables and structural-interactivity outputs for a route-resolved eukaryogenesis analysis"
 authors:
   - family-names: "Xia"
     given-names: "Zhiqiang"
-date-released: "2026-06-02"
-version: "submission-core-calc-only"
+date-released: "2026-06-08"
+version: "af3-structural-interactivity-update"
 doi: "10.5281/zenodo.20453583"

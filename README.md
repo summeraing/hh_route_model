@@ -1,6 +1,6 @@
 # Core calculation code for route-partitioned integration
 
-This minimal repository contains only the core calculation code and the small derived numerical tables needed to verify the main locked claims for:
+This repository contains the core calculation code, compact derived numerical tables and structural-interactivity support package needed to inspect the main locked claims for:
 
 **Route-partitioned integration reconciles scaffold continuity with energetic innovation in eukaryogenesis**
 
@@ -14,13 +14,14 @@ Correspondence: zqiangx@gmail.com
 - `code/reproduce_continuous_route_diagnostic.py`: validator for the continuous donor-role probability diagnostic.
 - `code/run_expanded_fes_validation.py`: UniProt/MAFFT/IQ-TREE workflow used for the expanded Fe-S marker-tree validation; this script requires network access and external phylogenetic tools.
 - `data/core_metrics/`: compact derived tables for route specificity, frozen null boundary, dependency collapse, independent-coding agreement, continuous donor-role diagnostics and expanded Fe-S validation summaries.
+- `data/structural_interactivity/`: AF3 structural-interactivity support package containing representative model CIF files, AF3 confidence outputs, ranking-score files, integrated interface metrics and interpretation-boundary metadata.
 - `metadata/`: manifest and citation metadata.
 
 ## Not included
 
-This repository intentionally excludes manuscript files, cover letters, Supplementary Information files, final figures, figure-plotting scripts, PPT files, image assets, full source-data workbooks and editorial planning materials.
+This repository intentionally excludes manuscript files, cover letters, Supplementary Information files, final figures, figure-design working files, PPT files, image assets and editorial planning materials.
 
-The full Source Data workbook and journal upload files remain in the submission package. This repository is meant to be the small public code/calculation companion, not a mirror of the submission folder.
+The journal upload files remain in the submission package. This repository is meant to be the public code, derived-table and structural-output companion, not a mirror of the submission folder.
 
 ## Quick check
 
@@ -34,6 +35,14 @@ The expanded Fe-S workflow is not a lightweight quick check because it retrieves
 ```bash
 python code/run_expanded_fes_validation.py --help
 ```
+
+The AF3 support package is provided as a compact archive for inspection rather than as a rerunnable AF3 workflow:
+
+```text
+data/structural_interactivity/AF3_structural_interactivity_public_release_20260608.zip
+```
+
+This archive contains 19 representative model CIF files, 19 AF3 confidence JSON outputs, 19 ranking-score CSV files, integrated interface-metric tables and a README. It does not include proprietary AF3 model parameters and is not interpreted as direct ancestral interface reconstruction.
 
 Expected core outputs:
 
