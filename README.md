@@ -36,13 +36,21 @@ The expanded Fe-S workflow is not a lightweight quick check because it retrieves
 python code/run_expanded_fes_validation.py --help
 ```
 
-The AF3 support package is provided as a compact archive for inspection rather than as a rerunnable AF3 workflow:
+The AF3 support package is provided in two layers.
+
+First, the compact 19-pair structural-interactivity archive is retained for inspection:
 
 ```text
 data/structural_interactivity/AF3_structural_interactivity_public_release_20260608.zip
 ```
 
-This archive contains 19 representative model CIF files, 19 AF3 confidence JSON outputs, 19 ranking-score CSV files, integrated interface-metric tables and a README. It does not include proprietary AF3 model parameters and is not interpreted as direct ancestral interface reconstruction.
+Second, the AF3-enhanced W2/W2C structural-interactome update is provided as processed tables and representative structures:
+
+```bash
+python code/reproduce_af3_structural_gate.py
+```
+
+This script recomputes the W2 high-confidence edge counts, route-label null result and W2C seed-stability calls from `data/af3/`. The AF3 outputs are interpreted as a calibrated structural-compatibility screen, not as direct ancestral in vivo complex reconstruction.
 
 Expected core outputs:
 

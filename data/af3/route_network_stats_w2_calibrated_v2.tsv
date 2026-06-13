@@ -1,0 +1,30 @@
+metric	value	note
+total_pairs_with_af3_summary	654	
+gated_edges_high_or_moderate	179	confidence_gate high or moderate
+high_confidence_edges	122	confidence_gate high
+same_route_high_edges	119	
+cross_route_high_edges	3	
+same_route_fraction_among_high	0.975410	Simple descriptive statistic, not a final null test.
+pair_class_gate_count	13	host_scaffold_positive|high
+pair_class_gate_count	39	host_scaffold_positive|low
+pair_class_gate_count	6	host_scaffold_positive|moderate
+pair_class_gate_count	3	reciprocal_cross_route|high
+pair_class_gate_count	160	reciprocal_cross_route|low
+pair_class_gate_count	37	reciprocal_cross_route|moderate
+pair_class_gate_count	106	route_consistent_positive|high
+pair_class_gate_count	86	route_consistent_positive|low
+pair_class_gate_count	4	route_consistent_positive|moderate
+pair_class_gate_count	190	unrelated_decoy|low
+pair_class_gate_count	10	unrelated_decoy|moderate
+route_pair_gate_count	106	energetic_module|energetic_module|high
+route_pair_gate_count	86	energetic_module|energetic_module|low
+route_pair_gate_count	4	energetic_module|energetic_module|moderate
+route_pair_gate_count	1	energetic_module|host_scaffold|high
+route_pair_gate_count	88	energetic_module|host_scaffold|low
+route_pair_gate_count	23	energetic_module|host_scaffold|moderate
+route_pair_gate_count	2	host_scaffold|energetic_module|high
+route_pair_gate_count	262	host_scaffold|energetic_module|low
+route_pair_gate_count	24	host_scaffold|energetic_module|moderate
+route_pair_gate_count	13	host_scaffold|host_scaffold|high
+route_pair_gate_count	39	host_scaffold|host_scaffold|low
+route_pair_gate_count	6	host_scaffold|host_scaffold|moderate
