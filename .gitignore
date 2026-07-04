@@ -1,5 +1,23 @@
-# Object file
-*.o
+# Runtime outputs
+out/
+*.log
+*.tmp
 
-# Ada Library Information
-*.ali
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local environments and credentials
+.env
+.env.*
+*.pem
+*.key
+*token*
+*TOKEN*
+github_pat_*
+ghp_*
+
+# Platform files
+.DS_Store
+Thumbs.db

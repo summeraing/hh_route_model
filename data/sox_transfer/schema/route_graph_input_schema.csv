@@ -1,0 +1,18 @@
+column,required,allowed_or_example,description
+case_id,yes,sox_hgt_transfer,Case identifier. Use eukaryogenesis for the benchmark case and sox_hgt_transfer for the transfer case.
+unit_id,yes,SOX-000001,Stable evidence-unit identifier.
+source_id,yes,study_or_database_id,Public source identifier. One paper or database release or genome set or curated evidence source.
+source_type,yes,literature;genome_cluster;database;phylogeny;structure,Source category used for diagnostics and source balancing.
+evidence_layer,yes,gene_cluster;phylogeny;genomic_context;literature_annotation;structure,Layer within a source. Used for source-by-layer nulls and dependency collapse.
+evidence_unit,yes,gene;operon;homolog_group;cluster_context;interface_pair,Granularity of the evidence entry.
+module_id,no,soxAX;soxYZ;soxB;soxCD;regulator;transporter;mobile_element,Module or marker family.
+gene_symbol,no,soxA;soxX;soxY;soxZ;soxB;soxC;soxD,Observed gene or homolog-group symbol.
+taxon_or_genome,no,Thiobacillus_denitrificans,Taxon or genome or MAG or reference group.
+donor_class,yes,lineage_core;hgt_pathway;mobile_context;uncertain,Donor-origin label.
+functional_class,yes,conserved_metabolic_backbone;variable_energy_module;mobility_boundary;support;uncertain,Organizational-role label.
+route_eligible,yes,TRUE;FALSE,TRUE if donor_class and functional_class should enter strict route support.
+dependency_group,yes,source:cluster:module,Rows in the same dependency group are collapsed for dependence checks.
+confidence,no,high;medium;low,Curator confidence.
+evidence_text,no,short text cue,Short source-traceable evidence phrase.
+provenance,no,DOI/PMID/table/accession,Traceable provenance string.
+notes,no,free text,Boundary notes or ambiguity rationale.

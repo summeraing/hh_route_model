@@ -1,0 +1,17 @@
+job_id,priority,comparison_group,route_class,chain_set,expected_gate,screen_seeds,confirm_seeds,rationale
+SOX_AF3_POS_001,1,cognate_positive,hgt_variable_energy,soxX+soxA,high,5,20,SoxXA is a known sulfur-oxidation cytochrome module and should serve as a positive interface control.
+SOX_AF3_POS_002,1,cognate_positive,hgt_variable_energy,soxY+soxZ,high,5,20,SoxYZ is a cognate carrier module and should show strong same-route interface support.
+SOX_AF3_FUNC_003,1,functional_route,hgt_variable_energy,soxY+soxZ+soxB,moderate_or_high,5,20,Tests whether the carrier module and SoxB form a plausible functional route assembly.
+SOX_AF3_FUNC_004,2,functional_route,hgt_variable_energy,soxX+soxA+soxY+soxZ,moderate_or_high,5,20,Tests whether SoxXA and SoxYZ remain structurally compatible in a route-localized sulfur oxidation module.
+SOX_AF3_FUNC_005,2,functional_route,hgt_variable_energy,soxC+soxD,moderate_or_high,5,20,SoxCD is a route-module candidate when both subunits are available.
+SOX_AF3_POS_006,1,cognate_positive,lineage_core_backbone,fccA+fccB,high,5,20,FccAB is a cognate lineage-core sulfur-energy complex and should pass a positive interface gate.
+SOX_AF3_POS_007,2,cognate_positive,lineage_core_backbone,soeA+soeB+soeC,moderate_or_high,5,20,SoeABC is a backbone sulfur oxidation complex; membrane subunit may lower confidence and should be interpreted cautiously.
+SOX_AF3_POS_008,2,cognate_positive,lineage_core_backbone,hdrA+hdrB+hdrC,moderate_or_high,5,20,HdrABC-like complex tests lineage-core/backbone route compatibility.
+SOX_AF3_POS_009,3,cognate_positive,lineage_core_or_boundary,dsrA+dsrB,high,5,20,DsrAB is an optional cognate complex if high-quality paired sequences are available.
+SOX_AF3_NEG_010,1,mobile_boundary_negative,boundary_decoy,soxB+transposase,low,5,5,Tests whether a mobile-boundary protein forms a nonspecific interface with a SOX catalytic protein.
+SOX_AF3_NEG_011,1,mobile_boundary_negative,boundary_decoy,soxY+integrase,low,5,5,Tests mobile-boundary specificity against a SOX carrier protein.
+SOX_AF3_NEG_012,1,mobile_boundary_negative,boundary_decoy,fccB+integrase,low,5,5,Tests mobile-boundary specificity against a lineage-core backbone protein.
+SOX_AF3_NEG_013,2,mobile_boundary_negative,boundary_decoy,hdrA+transposase,low,5,5,Tests whether backbone route proteins create nonspecific interfaces with mobile markers.
+SOX_AF3_NEG_014,2,mobile_boundary_negative,boundary_decoy,soeB+reverse_transcriptase,low,5,5,Tests membrane/backbone route specificity against a mobile marker.
+SOX_AF3_DECOY_015,3,housekeeping_decoy,unrelated_decoy,soxB+rpoB_decoy,low,5,5,Optional same-genome housekeeping decoy if sequence is available.
+SOX_AF3_DECOY_016,3,housekeeping_decoy,unrelated_decoy,soxY+rpoB_decoy,low,5,5,Optional same-genome housekeeping decoy if sequence is available.

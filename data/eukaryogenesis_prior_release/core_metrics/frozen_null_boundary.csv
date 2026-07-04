@@ -1,0 +1,6 @@
+metric,value
+source_aware_source_equal_null_q025,0.5068679864740891
+source_aware_source_equal_null_mean,0.535873
+frozen_q975_boundary,0.565984
+adjudicated_source_equal_support,0.76945
+margin_over_q975,0.20346599999999992

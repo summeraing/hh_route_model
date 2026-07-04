@@ -1,32 +1,21 @@
-# GitHub Update For Existing Repository
+# Release notes: v2026.07.03-dual-case-af3-framework
 
-Repository: https://github.com/summeraing/hh_route_model
+Date: 2026-07-03
 
-Do not replace the whole repository. Add only these files to the existing structure:
+This release updates the route-resolved evidence-graph public package to match the current dual-case framework.
 
-- `README.md` (overwrite existing file)
-- `code/reproduce_continuous_route_diagnostic.py`
-- `code/run_expanded_fes_validation.py`
-- `data/core_metrics/README.md` (overwrite existing file)
-- `data/core_metrics/continuous_donor_role_probability_matrix.csv`
-- `data/core_metrics/continuous_route_assignment_diagnostic.csv`
-- `data/core_metrics/continuous_route_bootstrap_diagnostic.csv`
-- `data/core_metrics/expanded_fes_compartment_summary.csv`
-- `data/core_metrics/expanded_fes_fixed_rerun_neighbor_summary.csv`
-- `data/core_metrics/expanded_fes_full_neighbor_summary.csv`
-- `data/core_metrics/expanded_fes_marker_interpretation.csv`
-- `data/core_metrics/expanded_fes_marker_manifest.csv`
-- `data/core_metrics/expanded_fes_retrieval_summary.csv`
-- `metadata/CITATION.cff` (overwrite existing file)
-- `metadata/FILE_MANIFEST_SHA256.csv` (overwrite existing file)
+## Added or refreshed
 
-Optional quick check:
+- Current consolidated Source Data workbook.
+- Final dual-case figure PNGs for orientation.
+- SOX-AF3 priority and Tier-2 processed summaries.
+- SOX-AF3 gate-evaluation tables and target matrices.
+- Compact AF3 JSON and SLURM server packets for reproducibility.
+- Final readiness, traceability and figure-production QA reports.
+- Neutral README and citation metadata independent of a single target journal.
 
-```bash
-python code/reproduce_continuous_route_diagnostic.py
-python code/run_expanded_fes_validation.py --help
-```
+## Interpretation limits
 
-Expected result: the continuous diagnostic script prints the three prespecified donor-role top assignments and the joint bootstrap probability, then exits without assertion errors. The Fe-S validation command should print command-line help.
-
-After updating GitHub, create a new Zenodo version from the updated repository. If Zenodo gives a new version-specific DOI, replace the DOI in the manuscript Data Availability, Code Availability, cover letter and submission-system fields before journal upload.
+- The SOX case is a transfer-validation case for the route-graph framework, not a complete sulfur-oxidation evolutionary reconstruction.
+- The SOX source-by-layer permutation null remains limited by label-homogeneous source-layer blocks and is reported as a boundary condition.
+- The AF3 layer is prediction-based structural screening. It does not replace biochemical binding assays.

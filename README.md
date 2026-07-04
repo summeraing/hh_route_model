@@ -1,79 +1,108 @@
-# Route-resolved evolutionary evidence-atlas code and data
+# Route-resolved evidence-graph framework
 
-This repository contains the calculation code, processed numerical tables and structural-interactivity support package for a route-resolved evolutionary evidence-atlas analysis of eukaryogenesis.
+This repository contains public code and processed data for a route-resolved evidence-graph framework. The framework tests whether donor origin in a complex evolutionary system is randomly mixed across organizational roles or maps to stable roles after source balancing, dependency collapse and stress testing.
 
-The analysis separates contributor identity from organizational role and tests whether public evolutionary evidence supports localized energetic incorporation within a continuing host scaffold rather than diffuse ancestry mixture or wholesale replacement.
+The release supports two analysis cases:
+
+1. **Eukaryogenesis benchmark.** Public route-resolved evidence units, source-equal route support, Fe-S phylogenetic checks and AF3 structural-interactivity support screens.
+2. **SOX-HGT transfer validation.** A prokaryotic sulfur-oxidation metabolic-pathway case testing the same donor-to-role mapping workflow on an independent HGT system.
 
 Author: Zhiqiang Xia  
 Correspondence: zqiangx@gmail.com
 
-## Included
+## Repository layout
 
-- `code/hh_route_model_formalism.py`: route-support and H-h formalism helper functions.
-- `code/reproduce_core_metrics.py`: small validator that reads the derived calculation tables and prints the locked audit-completed metrics.
-- `code/reproduce_continuous_route_diagnostic.py`: validator for the continuous donor-role probability diagnostic.
-- `code/run_expanded_fes_validation.py`: UniProt/MAFFT/IQ-TREE workflow used for the expanded Fe-S marker-tree validation; this script requires network access and external phylogenetic tools.
-- `code/evidence_atlas/`: route-resolved evidence-atlas calculation scripts for probabilistic mixture, model-family comparison, predictive cross-validation, permutation nulls, information theory, feature ablation, unsupervised route recovery, block-level MDL, resampling, Shapley and adversarial diagnostics.
-- `data/core_metrics/`: compact derived tables for route specificity, frozen null boundary, dependency collapse, independent-coding agreement, continuous donor-role diagnostics and expanded Fe-S validation summaries.
-- `data/evidence_atlas/`: processed workbooks for the full evidence-atlas computational evidence package, including a consolidated Source Data workbook and module-level result workbooks.
-- `data/structural_interactivity/`: AF3 structural-interactivity support package containing representative model CIF files, AF3 confidence outputs, ranking-score files, integrated interface metrics and interpretation-boundary metadata.
-- `metadata/`: manifest and citation metadata.
+- `code/core/`: core eukaryogenesis reproduction scripts retained from prior releases.
+- `code/route_graph/`: generic route-graph and SOX transfer-case scripts.
+- `code/af3_postprocess/`: AF3 summary and gate-evaluation scripts.
+- `data/source_data/`: consolidated Source Data workbook for the current dual-case manuscript.
+- `data/sox_transfer/`: SOX evidence units, route scores, sensitivity outputs and annotation-stress outputs.
+- `data/sox_af3/`: SOX-AF3 processed summaries, gate calls and target matrices.
+- `af3_jobs/`: compact AF3 JSON and SLURM submission packets used to run the SOX structural screen on a compute node.
+- `data/eukaryogenesis_prior_release/`: selected code/data carried forward from earlier public releases.
+- `figures/final_png/`: final figure PNGs for reader orientation.
+- `metadata/`: release notes, citation file, traceability reports and SHA256 manifest.
 
-## Not included
+## Minimal quick checks
 
-This repository intentionally excludes manuscript files, cover letters, Supplementary Information files, final figures, figure-design working files, PPT files, image assets and editorial planning materials.
-
-The journal upload files remain in the submission package. This repository is meant to be the public code, derived-table and structural-output companion, not a mirror of the submission folder.
-
-## Quick check
+Install the minimal Python dependencies:
 
 ```bash
-python code/reproduce_core_metrics.py
-python code/reproduce_continuous_route_diagnostic.py
+python -m pip install -r requirements.txt
 ```
 
-The expanded evidence-atlas modules are provided as auditable calculation scripts and processed workbooks:
-
-```text
-code/evidence_atlas/
-data/evidence_atlas/
-```
-
-The expanded Fe-S workflow is not a lightweight quick check because it retrieves homologues and calls external alignment/tree-building tools. The script is included for transparency and rerun planning:
+Run both public smoke tests:
 
 ```bash
-python code/run_expanded_fes_validation.py --help
+python code/run_smoke_tests.py
 ```
 
-The AF3 support package is provided as a compact archive for inspection rather than as a rerunnable AF3 workflow:
+The smoke test now covers both cases: eukaryogenesis core metrics and
+continuous donor-role diagnostics, followed by the SOX-HGT route graph and
+SOX-AF3 structural gate check.
 
-```text
-data/structural_interactivity/AF3_structural_interactivity_public_release_20260608.zip
+Run the SOX route graph:
+
+```bash
+python code/route_graph/run_route_graph_case.py \
+  --input data/sox_transfer/sox_evidence_units_expanded_v2.csv \
+  --case-id sox_hgt_transfer \
+  --donors lineage_core,hgt_pathway,mobile_context \
+  --roles conserved_metabolic_backbone,variable_energy_module,mobility_boundary \
+  --prespec lineage_core=conserved_metabolic_backbone,hgt_pathway=variable_energy_module,mobile_context=mobility_boundary \
+  --out out/sox_route_graph \
+  --iterations 2000 --enforce-gates
 ```
 
-This archive contains 19 representative model CIF files, 19 AF3 confidence JSON outputs, 19 ranking-score CSV files, integrated interface-metric tables and a README. It does not include proprietary AF3 model parameters and is not interpreted as direct ancestral interface reconstruction.
+Evaluate SOX-AF3 gates from processed summaries:
 
-Expected core outputs:
+```bash
+python code/af3_postprocess/evaluate_sox_af3_gates.py \
+  --summary-csv data/sox_af3/sox_af3_combined_priority1_tier2.csv \
+  --output-md out/sox_af3_gate_check.md \
+  --output-csv out/sox_af3_gate_check.csv
+```
 
-- prespecified route rank: 1
-- adjudicated source-equal support: 0.76945
+Core eukaryogenesis checks from prior releases are retained where available:
+
+```bash
+python code/core/reproduce_core_metrics.py
+python code/core/reproduce_continuous_route_diagnostic.py
+```
+
+## Expected case-level outputs
+
+Eukaryogenesis benchmark:
+
+- adjudicated prespecified route rank: 1
+- adjudicated source-equal support: 0.769450
 - frozen q97.5 null boundary: 0.565984
-- margin over q97.5 boundary: 0.203466
-- donor-class agreement: 0.771104; kappa = 0.464655
-- functional-class agreement: 0.793831; kappa = 0.466401
+- margin over q97.5: 0.203466
+- minimum dependency-collapse margin: 0.206667
+- joint bootstrap probability that all three prespecified roles are top: 0.999800
 
-Expected continuous diagnostic outputs:
+SOX transfer case:
 
-- host -> scaffold: source-equal probability = 0.540984; margin = 0.088525
-- symbiont -> energetic incorporation: source-equal probability = 0.967320; margin = 0.934641
-- other -> transition: source-equal probability = 0.761905; margin = 0.619048
-- joint bootstrap probability that all three prespecified roles remain top-ranked: 0.999800
+- route-eligible rows: 65
+- prespecified route rank: 1
+- source-equal support: 1.000
+- best alternative: 0.691
+- margin over best alternative: 0.309
+- annotation-stress route-eligible rows: 64
+- annotation-stress prespecified route rank: 1
+- annotation-stress margin over best alternative: 0.315
 
-Additional evidence-atlas diagnostics include:
+SOX-AF3 layer:
 
-- source-layer MDL best-ranked model: shared-theta route model
-- leave-source held-out loss for shared-theta route model: 1.220 bits
-- leave-source-layer held-out loss for shared-theta route model: 1.163 bits
-- source-layer block bootstrap rank-1 probability: 0.9819
-- unsupervised correspondence residual rank: 1
-- unsupervised graph-modularity rank: 1
+- the public release contains processed AF3 summary tables and gate calls, not a claim of experimentally measured binding;
+- AF3 predictions are used as structural-screen support for interface plausibility and decoy separation;
+- raw AF3 model directories may be too large or environment-specific for repository storage, so compact summaries and job inputs are included.
+
+## Scope
+
+This repository intentionally excludes manuscript drafts, cover letters, Supplementary Information documents, peer-review correspondence, PPT files and planning notes. It is a public code and processed-data companion for the route-resolved framework.
+
+## Release
+
+Current release tag: `v2026.07.03-dual-case-af3-framework`  
+Zenodo concept DOI: https://doi.org/10.5281/zenodo.20453582

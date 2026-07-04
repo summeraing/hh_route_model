@@ -1,0 +1,8 @@
+job_id,comparison_group,route_class,chain_set,expected_gate,n_models,median_iptm,q1_iptm,q3_iptm,median_ptm,median_ranking_score,observed_gate
+SOX_AF3_FUNC_003,functional_route,hgt_variable_energy,soxY+soxZ+soxB,moderate_or_high,26,0.83,0.8,0.84,0.86,0.89,high
+SOX_AF3_NEG_010,mobile_boundary_negative,boundary_decoy,soxB+transposase,low,26,0.185,0.16,0.4,0.72,0.36,low
+SOX_AF3_NEG_011,mobile_boundary_negative,boundary_decoy,soxY+integrase,low,26,0.1,0.0925,0.11,0.435,0.225,low
+SOX_AF3_NEG_012,mobile_boundary_negative,boundary_decoy,fccB+integrase,low,26,0.19,0.17,0.27,0.57,0.3,low
+SOX_AF3_POS_001,cognate_positive,hgt_variable_energy,soxX+soxA,high,26,0.68,0.6425,0.6875,0.76,0.79,high
+SOX_AF3_POS_002,cognate_positive,hgt_variable_energy,soxY+soxZ,high,26,0.92,0.92,0.92,0.83,0.97,high
+SOX_AF3_POS_006,cognate_positive,lineage_core_backbone,fccA+fccB,high,26,0.82,0.82,0.83,0.81,0.89,high

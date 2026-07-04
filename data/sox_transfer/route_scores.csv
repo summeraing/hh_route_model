@@ -1,0 +1,7 @@
+route_map,is_prespecified_route,n_units,n_sources,raw_route_rate,source_equal_route_rate,rank_by_source_equal,prespecified_margin_vs_best_alternative
+lineage_core->conserved_metabolic_backbone; hgt_pathway->variable_energy_module; mobile_context->mobility_boundary,True,65,4,1.0,1.0,1,0.3087121212121212
+lineage_core->mobility_boundary; hgt_pathway->variable_energy_module; mobile_context->conserved_metabolic_backbone,False,65,4,0.38461538461538464,0.6912878787878788,2,0.3087121212121212
+lineage_core->conserved_metabolic_backbone; hgt_pathway->mobility_boundary; mobile_context->variable_energy_module,False,65,4,0.5076923076923077,0.22916666666666666,3,0.3087121212121212
+lineage_core->variable_energy_module; hgt_pathway->conserved_metabolic_backbone; mobile_context->mobility_boundary,False,65,4,0.1076923076923077,0.07954545454545454,4,0.3087121212121212
+lineage_core->variable_energy_module; hgt_pathway->mobility_boundary; mobile_context->conserved_metabolic_backbone,False,65,4,0.0,0.0,5,0.3087121212121212
+lineage_core->mobility_boundary; hgt_pathway->conserved_metabolic_backbone; mobile_context->variable_energy_module,False,65,4,0.0,0.0,6,0.3087121212121212

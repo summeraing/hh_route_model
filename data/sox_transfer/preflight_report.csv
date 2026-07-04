@@ -1,0 +1,7 @@
+gate,observed,threshold,pass
+minimum_route_eligible_units,65,60,True
+minimum_sources,4,3,True
+minimum_dependency_groups,48,30,True
+maximum_single_source_fraction,0.5538461538461539,0.7,True
+all_donor_classes_represented,lineage_core:33; hgt_pathway:25; mobile_context:7,all requested donor labels present,True
+all_role_classes_represented,conserved_metabolic_backbone:33; variable_energy_module:25; mobility_boundary:7,all requested role labels present,True

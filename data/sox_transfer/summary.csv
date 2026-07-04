@@ -1,0 +1,2 @@
+case_id,n_route_eligible_units,n_sources,n_layers,n_dependency_groups,prespecified_rank,prespecified_source_equal,best_alternative_source_equal,margin_vs_best_alternative,collapsed_prespecified_rank,collapsed_margin_vs_best_alternative
+sox_hgt_transfer,65,4,10,48,1,1.0,0.6912878787878788,0.3087121212121212,1,0.30747126436781613

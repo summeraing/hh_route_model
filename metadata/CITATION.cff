@@ -1,10 +1,10 @@
-﻿cff-version: 1.2.0
-message: "If you use this repository, please cite the associated manuscript and archived repository DOI."
-title: "Code, derived tables and structural-interactivity outputs for a route-resolved evolutionary evidence-atlas analysis"
+cff-version: 1.2.0
+message: "If you use this code or processed data, please cite this repository."
+title: "Route-resolved evidence-graph framework with eukaryogenesis and SOX-HGT transfer validation"
 authors:
-  - family-names: "Xia"
-    given-names: "Zhiqiang"
-date-released: "2026-07-01"
-version: "evidence-atlas-expanded-computation"
+  - family-names: Xia
+    given-names: Zhiqiang
+date-released: "2026-07-03"
+version: "v2026.07.03-dual-case-af3-framework"
 doi: "10.5281/zenodo.20453582"
-
+repository-code: "https://github.com/summeraing/hh_route_model"

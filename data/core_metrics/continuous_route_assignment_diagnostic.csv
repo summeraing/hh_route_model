@@ -1,4 +1,0 @@
-label_set,diagnostic,donor_class,prespecified_functional_class,top_source_equal_functional_class,top_source_equal_probability,next_best_functional_class,next_best_probability,margin_top_minus_next,prespecified_is_top,sources_with_donor,total_role_space_rows_for_donor,nonroute_rows_for_donor
-audit_adjudicated_labels,continuous_source_equal_top_role,host,scaffold,scaffold,0.540984,transition,0.452459,0.088525,yes,5,210,0
-audit_adjudicated_labels,continuous_source_equal_top_role,symbiont,energetic_incorporation,energetic_incorporation,0.96732,scaffold,0.03268,0.934641,yes,3,181,0
-audit_adjudicated_labels,continuous_source_equal_top_role,other,transition,transition,0.761905,energetic_incorporation,0.142857,0.619048,yes,3,1118,0

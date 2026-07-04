@@ -1,8 +1,0 @@
-n_sources,n_units,raw_route_rate,set,source_equal_route_rate
-5,1522,0.931669,full_table_current_labels,0.704466
-5,616,0.831169,audit_set_current_labels,0.669112
-5,616,0.983766,audit_set_coder1_all_rows,0.897579
-5,616,0.873377,audit_set_coder2_all_rows,0.614799
-5,616,0.871753,audit_set_adjudicated_all_rows,0.731972
-5,603,0.890547,audit_set_adjudicated_exclude_uncertain,0.755541
-5,1522,0.948095,full_table_adjudicated_uncertain_as_nonroute,0.769450

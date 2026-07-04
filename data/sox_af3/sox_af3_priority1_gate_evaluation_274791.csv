@@ -1,0 +1,4 @@
+gate_family,n_jobs,median_iptm,mean_gate_score,jobs,observed_gates
+functional,1,0.83,2,SOX_AF3_FUNC_003,high
+negative,3,0.185,0,SOX_AF3_NEG_010;SOX_AF3_NEG_011;SOX_AF3_NEG_012,low;low;low
+positive,3,0.82,2,SOX_AF3_POS_001;SOX_AF3_POS_002;SOX_AF3_POS_006,high;high;high

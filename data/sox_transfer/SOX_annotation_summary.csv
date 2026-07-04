@@ -1,0 +1,7 @@
+﻿metric,value
+total_rows,176
+strict_route_rows_original,65
+route_rows_with_supported_function_label,65
+route_rows_with_supported_donor_label,65
+route_rows_retained_after_annotation_stress,64
+route_rows_flagged_for_review,1
