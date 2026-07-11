@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "frozen_date": "2026-07-11",
+  "genome_universe": {
+    "database": "RefSeq",
+    "selection": "reference category; complete genome or chromosome",
+    "n_genomes": 7453,
+    "taxonomy": "GTDB R232"
+  },
+  "candidate_definition": {
+    "required_gene": "soxB",
+    "required_any": ["soxX", "soxY", "soxZ"],
+    "minimum_distinct_sox_genes": 3,
+    "exclude_pseudogene": true,
+    "exclude_partial_cds": true
+  },
+  "architecture": {
+    "maximum_within_cluster_gap_bp": 20000,
+    "boundary_flank_bp": 10000,
+    "mobile_proximity_bp": 20000
+  },
+  "donor_thresholds": {
+    "phylogeny": {
+      "hgt_like": 0.35,
+      "hgt_like_high": 0.55,
+      "vertical_like": 0.05,
+      "vertical_like_high": 0.0
+    },
+    "order_distribution": {
+      "hgt_like_max_prevalence": 0.2,
+      "hgt_like_high_max_prevalence": 0.1,
+      "vertical_like_min_prevalence": 0.65,
+      "vertical_like_high_min_prevalence": 0.85
+    },
+    "composition": {
+      "hgt_like_min_absolute_deviation": 0.07,
+      "hgt_like_high_min_absolute_deviation": 0.1,
+      "vertical_like_max_absolute_deviation": 0.02,
+      "vertical_like_high_max_absolute_deviation": 0.01
+    },
+    "mobile_proximity_bp": 20000
+  },
+  "aggregation": {
+    "primary_unit": "source by evidence layer by operon-role",
+    "tie_policy": "uncertain_not_route_eligible",
+    "high_vote_fraction": 0.75,
+    "medium_vote_fraction": 0.5
+  },
+  "route_test": {
+    "donors": ["vertical_like", "hgt_like", "mobile_context"],
+    "roles": ["recipient_sulfur_backbone", "sox_energy_module", "mobility_boundary"],
+    "prespecified_map": {
+      "vertical_like": "recipient_sulfur_backbone",
+      "hgt_like": "sox_energy_module",
+      "mobile_context": "mobility_boundary"
+    },
+    "permutations": 10000,
+    "seed": 20260711,
+    "minimum_units": 300,
+    "minimum_sources": 2,
+    "minimum_dependency_groups": 200,
+    "maximum_source_fraction": 0.8,
+    "require_non_degenerate_source_layer_null": true
+  },
+  "phylogeny": {
+    "primary_model_selection": "IQ-TREE ModelFinder Plus; UFBoot 1000; SH-aLRT 1000",
+    "fixed_model_sensitivity": "LG+F+R6; UFBoot 1000; SH-aLRT 1000",
+    "minimum_single_copy_genomes": 20
+  }
+}

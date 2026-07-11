@@ -1,0 +1,8 @@
+{
+  "status": "post-boundary cross-layer sensitivity",
+  "predictor": "hgt_recipient_fraction_mean",
+  "taxonomic_control": "shuffle predictor within GTDB order",
+  "mobile_window_bp": 10000,
+  "permutations": 10000,
+  "seed": 20260716
+}

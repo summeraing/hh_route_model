@@ -1,0 +1,24 @@
+{
+  "analysis_name": "SOX atlas decision tiers",
+  "status": "frozen before formal 427-genome route results",
+  "required_tree_models_for_final_decision": ["ModelFinder", "LG+F+R6"],
+  "core_route_gates": [
+    "preflight_pass",
+    "prespecified_rank_1",
+    "collapsed_rank_1",
+    "source_layer_null_non_degenerate",
+    "observed_exceeds_source_layer_null"
+  ],
+  "primary_support_additional_gates": [
+    "both_tree_models_pass_core_route_gates",
+    "all_reported_dependency_schemes_retain_rank_1_and_positive_margin",
+    "continuous_mapping_has_three_prespecified_rowwise_argmax_roles",
+    "continuous_prespecified_support_exceeds_source_layer_null_q97.5"
+  ],
+  "decision_rules": {
+    "PRIMARY_SUPPORT": "Both tree models pass all core and additional gates.",
+    "CONDITIONAL_SUPPORT": "At least one tree model passes all core route gates, but model, dependency or continuous-mapping concordance is incomplete.",
+    "BOUNDARY_RESULT": "Neither tree model passes all core route gates.",
+    "PRELIMINARY": "Only one tree model is available; no final support label is assigned."
+  }
+}

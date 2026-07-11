@@ -1,0 +1,12 @@
+{
+  "controls_per_cluster": 20,
+  "windows_bp": [
+    5000,
+    10000,
+    20000
+  ],
+  "control_exclusion_distance_bp": 40000,
+  "permutations": 10000,
+  "seed": 20260714,
+  "dependency_unit": "genome mean across SOX clusters"
+}

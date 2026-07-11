@@ -1,0 +1,11 @@
+{
+  "software": "GeneRax 2.1.3",
+  "strategy": "EVAL",
+  "models": [
+    "UndatedDTL",
+    "UndatedDL"
+  ],
+  "formal_likelihood_ratio_test": false,
+  "reason": "The transfer-rate null is on a model boundary; delta likelihoods are reported descriptively.",
+  "known_software_issue": "GeneRax 2.1.3 segfaulted while writing per-species event counts after valid likelihood and rate files were written."
+}

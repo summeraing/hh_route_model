@@ -1,0 +1,10 @@
+name: route-evidence-graph
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy=1.26.4
+  - pandas=2.2.2
+  - openpyxl=3.1.5
+  - requests=2.32.3
+  - dendropy=5.0.8

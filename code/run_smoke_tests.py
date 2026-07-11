@@ -45,19 +45,31 @@ def check_sox_route_graph() -> None:
     assert_close(float(summary["margin_vs_best_alternative"]), 0.3087121212121212, tol=1e-9)
 
 
+def check_permutation_equivalence() -> None:
+    run([sys.executable, "code/route_graph/test_permutation_equivalence.py"])
+
+
 def check_sox_af3_gates() -> None:
     out_md = OUT / "sox_af3_gate_check.md"
     out_csv = OUT / "sox_af3_gate_check.csv"
     run([
         sys.executable,
         "code/af3_postprocess/evaluate_sox_af3_gates.py",
-        "--summary-csv", "data/sox_af3/sox_af3_combined_priority1_tier2.csv",
+        "--summary-csv", "data/sox_af3/sox_af3_combined_primary_boundary.csv",
         "--output-md", str(out_md),
         "--output-csv", str(out_csv),
     ])
     text = out_md.read_text(encoding="utf-8")
-    if "Vita-first possible: structural gates separate" not in text:
+    if "STRUCTURAL_GATE_PASS" not in text:
         raise AssertionError(text)
+
+
+def check_sox_genome_atlas_release() -> None:
+    run([
+        sys.executable,
+        "code/sox_genome_atlas/validate_released_results.py",
+        "--data-root", "data/sox_genome_atlas",
+    ])
 
 
 def check_eukaryogenesis_core_metrics() -> None:
@@ -69,7 +81,9 @@ def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     check_eukaryogenesis_core_metrics()
     check_sox_route_graph()
+    check_permutation_equivalence()
     check_sox_af3_gates()
+    check_sox_genome_atlas_release()
     print("SMOKE_TESTS_PASS")
 
 

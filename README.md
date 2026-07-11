@@ -2,10 +2,12 @@
 
 This repository contains public code and processed data for a route-resolved evidence-graph framework. The framework tests whether donor origin in a complex evolutionary system is randomly mixed across organizational roles or maps to stable roles after source balancing, dependency collapse and stress testing.
 
-The release supports two analysis cases:
+The release supports two principal analysis cases and one retained pilot:
 
 1. **Eukaryogenesis benchmark.** Public route-resolved evidence units, source-equal route support, Fe-S phylogenetic checks and AF3 structural-interactivity support screens.
-2. **SOX-HGT transfer validation.** A prokaryotic sulfur-oxidation metabolic-pathway case testing the same donor-to-role mapping workflow on an independent HGT system.
+2. **SOX genome atlas.** A comparative-genomics benchmark built from 7,453 RefSeq reference complete/chromosome assemblies, 427 strict SOX-positive genomes, GTDB R232 species trees, six core SOX family trees, matched genomic controls and dependency-aware route tests.
+
+The earlier 65-row SOX-HGT literature-coded case is retained as a legacy smoke-test example, not as the primary SOX result.
 
 Author: Zhiqiang Xia  
 Correspondence: zqiangx@gmail.com
@@ -14,9 +16,11 @@ Correspondence: zqiangx@gmail.com
 
 - `code/core/`: core eukaryogenesis reproduction scripts retained from prior releases.
 - `code/route_graph/`: generic route-graph and SOX transfer-case scripts.
+- `code/sox_genome_atlas/`: RefSeq/GTDB comparative-genomics, reconciliation, matched-control and sensitivity scripts.
 - `code/af3_postprocess/`: AF3 summary and gate-evaluation scripts.
 - `data/source_data/`: consolidated Source Data workbook for the current dual-case manuscript.
 - `data/sox_transfer/`: SOX evidence units, route scores, sensitivity outputs and annotation-stress outputs.
+- `data/sox_genome_atlas/`: processed atlas evidence, family trees, reconciliations, matched controls and model sensitivities.
 - `data/sox_af3/`: SOX-AF3 processed summaries, gate calls and target matrices.
 - `af3_jobs/`: compact AF3 JSON and SLURM submission packets used to run the SOX structural screen on a compute node.
 - `data/eukaryogenesis_prior_release/`: selected code/data carried forward from earlier public releases.
@@ -31,15 +35,23 @@ Install the minimal Python dependencies:
 python -m pip install -r requirements.txt
 ```
 
+For a pinned Conda environment, use `conda env create -f environment.yml`. A complete five-minute walkthrough, expected outputs and the third-system schema example are provided in `QUICKSTART.md`.
+
 Run both public smoke tests:
 
 ```bash
 python code/run_smoke_tests.py
 ```
 
-The smoke test now covers both cases: eukaryogenesis core metrics and
-continuous donor-role diagnostics, followed by the SOX-HGT route graph and
-SOX-AF3 structural gate check.
+The smoke test covers eukaryogenesis core metrics, the legacy SOX-HGT route graph,
+the SOX-AF3 structural gate and invariant checks for the released SOX genome atlas.
+
+Validate the genome-atlas release directly:
+
+```bash
+python code/sox_genome_atlas/validate_released_results.py \
+  --data-root data/sox_genome_atlas
+```
 
 Run the SOX route graph:
 
@@ -58,7 +70,7 @@ Evaluate SOX-AF3 gates from processed summaries:
 
 ```bash
 python code/af3_postprocess/evaluate_sox_af3_gates.py \
-  --summary-csv data/sox_af3/sox_af3_combined_priority1_tier2.csv \
+  --summary-csv data/sox_af3/sox_af3_combined_primary_boundary.csv \
   --output-md out/sox_af3_gate_check.md \
   --output-csv out/sox_af3_gate_check.csv
 ```
@@ -81,7 +93,15 @@ Eukaryogenesis benchmark:
 - minimum dependency-collapse margin: 0.206667
 - joint bootstrap probability that all three prespecified roles are top: 0.999800
 
-SOX transfer case:
+SOX genome atlas:
+
+- 7,453 RefSeq genomes scanned with zero GFF parse failures;
+- 427 strict SOX-positive genomes, including 398 mapped to GTDB R232;
+- six core families show 36.5-47.4 calibrated transfer events per 100 tips across ModelFinder-selected and fixed-tree analyses;
+- the frozen symmetric three-route map ranks 5 of 6 and is rejected;
+- the retained result is localized HGT-like evidence in the SOX module, with matched mobile and composition controls rejecting a general recent-island explanation.
+
+Legacy 65-row SOX transfer case:
 
 - route-eligible rows: 65
 - prespecified route rank: 1
@@ -102,7 +122,11 @@ SOX-AF3 layer:
 
 This repository intentionally excludes manuscript drafts, cover letters, Supplementary Information documents, peer-review correspondence, PPT files and planning notes. It is a public code and processed-data companion for the route-resolved framework.
 
+## License
+
+The analysis code is released under the MIT License. Public-source data and derived tables remain subject to the provenance and reuse conditions of their original sources.
+
 ## Release
 
-Current release tag: `v2026.07.03-dual-case-af3-framework`  
+Current release tag: `v2026.07.12-sox-genome-atlas`
 Zenodo concept DOI: https://doi.org/10.5281/zenodo.20453582

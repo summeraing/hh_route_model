@@ -1,0 +1,7 @@
+route_map,is_prespecified_route,n_units,n_sources,raw_route_rate,source_equal_route_rate,rank_by_source_equal,prespecified_margin_vs_best_alternative
+vertical_like->sox_energy_module; hgt_like->recipient_sulfur_backbone; mobile_context->mobility_boundary,False,1849,2,0.5251487290427258,0.6195684586512469,1,-0.4859499484639669
+vertical_like->sox_energy_module; hgt_like->mobility_boundary; mobile_context->recipient_sulfur_backbone,False,1849,2,0.5159545700378583,0.5977474864029145,2,-0.4859499484639669
+vertical_like->mobility_boundary; hgt_like->sox_energy_module; mobile_context->recipient_sulfur_backbone,False,1849,2,0.4137371552190373,0.3096051497137967,3,-0.4859499484639669
+vertical_like->mobility_boundary; hgt_like->recipient_sulfur_backbone; mobile_context->sox_energy_module,False,1849,2,0.38615467820443483,0.2686340034098055,4,-0.4859499484639669
+vertical_like->recipient_sulfur_backbone; hgt_like->sox_energy_module; mobile_context->mobility_boundary,True,1849,2,0.09789075175770687,0.13361851018728,5,-0.4859499484639669
+vertical_like->recipient_sulfur_backbone; hgt_like->mobility_boundary; mobile_context->sox_energy_module,False,1849,2,0.061114115738236885,0.07082639163495634,6,-0.4859499484639669

@@ -1,0 +1,10 @@
+case_id,unit_id,source_id,evidence_layer,donor_class,functional_class,route_eligible,dependency_group,provenance,notes
+toy_transfer,T01,source_A,genome,inherited,backbone,true,group_01,toy,synthetic schema example
+toy_transfer,T02,source_A,expression,foreign,module,true,group_02,toy,synthetic schema example
+toy_transfer,T03,source_A,mobility,mobile,boundary,true,group_03,toy,synthetic schema example
+toy_transfer,T04,source_B,genome,inherited,backbone,true,group_04,toy,synthetic schema example
+toy_transfer,T05,source_B,expression,foreign,module,true,group_05,toy,synthetic schema example
+toy_transfer,T06,source_B,mobility,mobile,boundary,true,group_06,toy,synthetic schema example
+toy_transfer,T07,source_C,genome,inherited,backbone,true,group_07,toy,synthetic schema example
+toy_transfer,T08,source_C,expression,foreign,module,true,group_08,toy,synthetic schema example
+toy_transfer,T09,source_C,mobility,mobile,boundary,true,group_09,toy,synthetic schema example

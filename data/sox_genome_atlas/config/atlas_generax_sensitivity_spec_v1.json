@@ -1,0 +1,15 @@
+{
+  "analysis_name": "SOX GeneRax DTL reconciliation sensitivity",
+  "status": "post-boundary mechanistic sensitivity; cannot replace or rescue the frozen primary route analysis",
+  "software": "GeneRax 2.1.3 BioContainers",
+  "strategy": "EVAL",
+  "reconciliation_model": "UndatedDTL",
+  "gene_tree_set": "fixed LG+F+R6 IQ-TREE trees",
+  "substitution_model_for_evaluation": "LG+G",
+  "per_family_rates": true,
+  "gene_tree_rooting": "MAD-weighted root likelihoods",
+  "species_tree": "GTDB R232 bac120 pruned to the union of mapped single-copy SOX taxa",
+  "families": ["soxa", "soxb", "soxc", "soxx", "soxy", "soxz"],
+  "random_seed": 20260713,
+  "interpretation_boundary": "DTL events are model-based historical reconstructions. They may explain ancient transfer missed by local tip coherence, but they do not alter the frozen donor labels or primary route ranking."
+}

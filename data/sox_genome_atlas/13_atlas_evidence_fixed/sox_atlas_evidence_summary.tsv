@@ -1,0 +1,9 @@
+metric	value
+all_feature_metric_rows	88835
+all_operon_role_units	7620
+route_eligible_operon_role_units	3658
+dependency_groups	1511
+genomes	427
+sources	2
+layers	5
+analysis_spec_sha256	57685f64725178b34d987e1462a72fa8625a8562555473fd3320d128bdab1c6a

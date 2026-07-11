@@ -1,0 +1,16 @@
+gtdb_phylum	gtdb_class	module_class	genomes	orders	genera	median_sox_genes
+p__Pseudomonadota	c__Alphaproteobacteria	complete	141	7	74	6.0
+p__Pseudomonadota	c__Gammaproteobacteria	complete	102	6	50	6.0
+p__Pseudomonadota	c__Gammaproteobacteria	near_complete	59	15	43	5.0
+p__Campylobacterota	c__Campylobacteria	complete	51	1	13	6.0
+		complete	20	0	0	6.0
+p__Pseudomonadota	c__Alphaproteobacteria	near_complete	11	3	7	5.0
+p__Aquificota	c__Aquificia	near_complete	9	1	7	5.0
+		near_complete	9	0	0	5.0
+p__Deinococcota	c__Deinococci	complete	8	1	3	6.0
+p__Campylobacterota	c__Campylobacteria	near_complete	7	1	6	5.0
+p__Bacteroidota	c__Chlorobiia	near_complete	4	1	2	5.0
+p__Pseudomonadota	c__Gammaproteobacteria	minimal	3	1	1	3.0
+p__Myxococcota	c__Myxococcia	complete	1	1	1	6.0
+p__Vulcanimicrobiota	c__Vulcanimicrobiia	complete	1	1	1	6.0
+p__Pseudomonadota	c__Magnetococcia	near_complete	1	1	1	5.0

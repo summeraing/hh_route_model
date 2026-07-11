@@ -12,6 +12,11 @@ if ! command -v sbatch >/dev/null 2>&1; then
   exit 1
 fi
 
+: "${AF3_SIF:?Export AF3_SIF before submission}"
+: "${AF3_MODEL_DIR:?Export AF3_MODEL_DIR before submission}"
+: "${AF3_DB_DIR:?Export AF3_DB_DIR before submission}"
+AF3_RUN_SCRIPT="${AF3_RUN_SCRIPT:-/app/alphafold/run_alphafold.py}"
+
 if [[ ! -d "${JOB_DIR}" ]]; then
   echo "ERROR: Missing AF3 JSON directory: ${JOB_DIR}" >&2
   exit 1
@@ -32,5 +37,5 @@ echo "Job list: ${JOB_LIST}"
 
 cd "${ROOT_DIR}"
 sbatch --array="1-${N_JOBS}" \
-  --export=ALL,ROOT_DIR="${ROOT_DIR}",JOB_LIST="${JOB_LIST}",OUT_DIR="${OUT_DIR}" \
+  --export=ALL,ROOT_DIR="${ROOT_DIR}",JOB_LIST="${JOB_LIST}",OUT_DIR="${OUT_DIR}",AF3_SIF="${AF3_SIF}",AF3_MODEL_DIR="${AF3_MODEL_DIR}",AF3_DB_DIR="${AF3_DB_DIR}",AF3_RUN_SCRIPT="${AF3_RUN_SCRIPT}" \
   "${SBATCH_FILE}"

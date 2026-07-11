@@ -1,0 +1,26 @@
+{
+  "analysis_name": "SOX atlas continuous donor-role mapping",
+  "status": "secondary analysis frozen before formal 427-genome route results",
+  "case_id": "sox_genome_atlas",
+  "donors": ["vertical_like", "hgt_like", "mobile_context"],
+  "roles": ["recipient_sulfur_backbone", "sox_energy_module", "mobility_boundary"],
+  "prespecified_mapping": {
+    "vertical_like": "recipient_sulfur_backbone",
+    "hgt_like": "sox_energy_module",
+    "mobile_context": "mobility_boundary"
+  },
+  "source_weighting": "equal sources within each donor row",
+  "permutation_strata": ["source_id", "evidence_layer"],
+  "permutation_iterations": 10000,
+  "bootstrap_dependency_column": "operon_dependency_group",
+  "bootstrap_iterations": 2000,
+  "random_seed": 20260712,
+  "primary_secondary_metrics": [
+    "mean_prespecified_role_probability",
+    "mean_unconstrained_best_role_probability",
+    "prespecified_to_unconstrained_gap",
+    "number_of_prespecified_rowwise_argmax_roles",
+    "source_equal_mutual_information"
+  ],
+  "interpretation_rule": "The analysis is descriptive and falsifiable. It supports the prespecified mapping only when each donor's prespecified role is the row-wise probability maximum and the mean prespecified probability exceeds the source-layer permutation q97.5 boundary."
+}

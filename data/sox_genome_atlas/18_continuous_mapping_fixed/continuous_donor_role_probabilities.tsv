@@ -1,0 +1,10 @@
+donor_class	functional_class	source_equal_probability	bootstrap_q025	bootstrap_median	bootstrap_q975	is_prespecified_cell
+vertical_like	recipient_sulfur_backbone	0.06691958510236994	0.05319381715732154	0.0669909026961486	0.08142590564077837	True
+vertical_like	sox_energy_module	0.6759162913397588	0.6574059481454635	0.6758202563035277	0.6931833204288451	False
+vertical_like	mobility_boundary	0.2571641235578712	0.24482612042323906	0.2573597573032944	0.27017087565230996	False
+hgt_like	recipient_sulfur_backbone	0.15419718637367746	0.10885751648374775	0.15360830256027486	0.2037854322152567	False
+hgt_like	sox_energy_module	0.6367864201836996	0.5819043803418803	0.6361976704466492	0.6858698665853988	True
+hgt_like	mobility_boundary	0.20901639344262296	0.18169054424339776	0.20903954802259886	0.2375707683200777	False
+mobile_context	recipient_sulfur_backbone	0.0	0.0	0.0	0.0	False
+mobile_context	sox_energy_module	0.0	0.0	0.0	0.0	False
+mobile_context	mobility_boundary	1.0	1.0	1.0	1.0	True

@@ -1,0 +1,4 @@
+donor_class	prespecified_role	prespecified_probability	prespecified_rank_unconstrained	best_unconstrained_role	best_unconstrained_probability	normalized_role_entropy
+vertical_like	recipient_sulfur_backbone	0.06691958510236994	3	sox_energy_module	0.6759162913397588	0.723598807526242
+hgt_like	sox_energy_module	0.6367864201836996	1	sox_energy_module	0.6367864201836996	0.821811783493963
+mobile_context	mobility_boundary	1.0	1	mobility_boundary	1.0	-0.0

@@ -1,0 +1,7 @@
+gate,observed,threshold,pass
+minimum_route_eligible_units,3658,300,True
+minimum_sources,2,2,True
+minimum_dependency_groups,1511,200,True
+maximum_single_source_fraction,0.8537452159650082,0.8,False
+all_donor_classes_represented,vertical_like:3128; hgt_like:460; mobile_context:70,all requested donor labels present,True
+all_role_classes_represented,sox_energy_module:1837; mobility_boundary:1605; recipient_sulfur_backbone:216,all requested role labels present,True

@@ -1,0 +1,7 @@
+{
+  "cluster_definition": "SOX genes separated by no more than 20 kb on the same contig",
+  "orientation_rule": "reverse order when the majority strand is negative",
+  "adjacency_null": "within-cluster gene-order permutation preserving gene content and cluster size",
+  "permutations": 10000,
+  "seed": 20260715
+}

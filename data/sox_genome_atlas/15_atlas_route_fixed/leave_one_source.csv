@@ -1,0 +1,3 @@
+removed_source,n_units,n_sources,prespecified_rank,prespecified_source_equal,best_alternative_source_equal,margin_vs_best_alternative
+GTDB_R232,3123,1,5,0.11847582452769773,0.49951969260326606,-0.38104386807556834
+RefSeq_PGAP,535,1,3,0.21121495327102804,0.788785046728972,-0.577570093457944

@@ -7,7 +7,7 @@ from pathlib import Path
 
 
 GATE_SCORE = {"missing": -1, "low": 0, "moderate": 1, "high": 2}
-REQUIRED_PRIORITY1_JOBS = {
+REQUIRED_PRIMARY_JOBS = {
     "SOX_AF3_POS_001",
     "SOX_AF3_POS_002",
     "SOX_AF3_FUNC_003",
@@ -78,24 +78,23 @@ def main() -> None:
     func_ok = (not func_scores) or statistics.median(func_scores) >= 1
 
     observed_jobs = {row.get("job_id", "") for row in rows}
-    missing_priority1 = sorted(REQUIRED_PRIORITY1_JOBS - observed_jobs)
+    missing_primary = sorted(REQUIRED_PRIMARY_JOBS - observed_jobs)
     has_positive = bool(pos_scores)
     has_negative = bool(neg_scores)
     has_functional = bool(func_scores)
 
     if not rows:
         decision = "Pending: no completed SOX-AF3 jobs were parsed; do not make a structural claim."
-    elif missing_priority1 or not (has_positive and has_negative and has_functional):
+    elif missing_primary or not (has_positive and has_negative and has_functional):
         decision = (
-            "Partial screen: wait for remaining priority-1 SOX-AF3 jobs before deciding "
-            "Vita/iMeta structural claims."
+            "PARTIAL_SCREEN: remaining primary SOX-AF3 jobs or comparison families are missing."
         )
     elif pos_ok and func_ok and neg_ok:
-        decision = "Vita-first possible: structural gates separate."
+        decision = "STRUCTURAL_GATE_PASS: route-relevant families separate from primary controls."
     elif pos_scores and neg_scores and statistics.median(pos_scores) > statistics.median(neg_scores):
-        decision = "iMeta-first: partial structural separation; keep SOX-AF3 as support or Supplementary."
+        decision = "STRUCTURAL_GATE_PARTIAL: retain the screen as boundary-aware support."
     else:
-        decision = "Do not claim SOX structural validation in the main text."
+        decision = "STRUCTURAL_GATE_FAIL: do not use the screen as structural support."
 
     args.output_csv.parent.mkdir(parents=True, exist_ok=True)
     with args.output_csv.open("w", encoding="utf-8", newline="") as fh:
@@ -110,7 +109,7 @@ def main() -> None:
         f"- Input summary: `{args.summary_csv}`",
         f"- Decision: **{decision}**",
         f"- Parsed jobs: {len(observed_jobs)}",
-        f"- Missing priority-1 jobs: {', '.join(missing_priority1) if missing_priority1 else 'none'}",
+        f"- Missing primary jobs: {', '.join(missing_primary) if missing_primary else 'none'}",
         "",
         "## Family summary",
         "",
@@ -126,7 +125,7 @@ def main() -> None:
         "",
         "Gate score: low=0, moderate=1, high=2. Missing=-1.",
         "",
-        "Interpretation rule: Vita-style claims require cognate positives and functional assemblies to be moderate/high while mobile-boundary negatives remain low.",
+        "Interpretation rule: cognate positives and functional assemblies should be moderate/high while prespecified primary controls remain low. Boundary-screen exceptions must be reported rather than hidden.",
     ])
     args.output_md.write_text("\n".join(md) + "\n", encoding="utf-8")
 

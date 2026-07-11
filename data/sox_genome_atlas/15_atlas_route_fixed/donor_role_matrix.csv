@@ -1,0 +1,10 @@
+donor_class,functional_class,source_equal_probability,raw_count,n_sources_observed
+hgt_like,mobility_boundary,0.024495677233429394,153,2
+hgt_like,recipient_sulfur_backbone,0.024295175080275674,55,2
+hgt_like,sox_energy_module,0.09765711737755153,252,2
+mobile_context,mobility_boundary,0.011207172590457892,70,2
+mobile_context,recipient_sulfur_backbone,0.0,0,2
+mobile_context,sox_energy_module,0.0,0,2
+vertical_like,mobility_boundary,0.2212616074287544,1382,2
+vertical_like,recipient_sulfur_backbone,0.055981098931353446,161,2
+vertical_like,sox_energy_module,0.5651021513581777,1585,2

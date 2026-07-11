@@ -1,10 +1,10 @@
 cff-version: 1.2.0
 message: "If you use this code or processed data, please cite this repository."
-title: "Route-resolved evidence-graph framework with eukaryogenesis and SOX-HGT transfer validation"
+title: "Auditable evidence-graph framework with eukaryogenesis and SOX genome-atlas benchmarks"
 authors:
   - family-names: Xia
     given-names: Zhiqiang
-date-released: "2026-07-03"
-version: "v2026.07.03-dual-case-af3-framework"
+date-released: "2026-07-12"
+version: "v2026.07.12-sox-genome-atlas"
 doi: "10.5281/zenodo.20453582"
 repository-code: "https://github.com/summeraing/hh_route_model"

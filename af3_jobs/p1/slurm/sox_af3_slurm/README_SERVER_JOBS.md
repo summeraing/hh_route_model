@@ -9,12 +9,12 @@ This directory is a submission template. It assumes the server packet contains:
 - `scripts/summarize_sox_af3_results.py`: summary parser from the public release, only needed for the collection step.
 - `target_matrix/sox_af3_target_matrix_v1.csv`: AF3 target matrix, only needed for the collection step.
 
-The current server AF3 asset paths are hard-coded in `sox_af3_array.sbatch`:
+Set the AF3 asset paths for the target cluster before submission:
 
 ```bash
-AF3_SIF=/jinxianstor/home/xiazhiqiang1/02.work/02.2026_work/06.PPI/af3_assets/alphafold3/alphafold3.sif
-AF3_MODEL_DIR=/jinxianstor/home/xiazhiqiang1/02.work/02.2026_work/06.PPI/af3_assets/models
-AF3_DB_DIR=/jinxianstor/home/xiazhiqiang1/02.work/02.2026_work/06.PPI/af3_assets/public_databases
+export AF3_SIF=/path/to/alphafold3.sif
+export AF3_MODEL_DIR=/path/to/models
+export AF3_DB_DIR=/path/to/public_databases
 AF3_RUN_SCRIPT=/app/alphafold/run_alphafold.py
 ```
 
@@ -23,7 +23,7 @@ AF3_RUN_SCRIPT=/app/alphafold/run_alphafold.py
 From the uploaded packet root on the server:
 
 ```bash
-cd /jinxianstor/home/xiazhiqiang1/02.work/02.2026_work/01.network_model/SOX_AF3_slurm_packet
+cd /path/to/uploaded/SOX_AF3_slurm_packet
 bash server_jobs/sox_af3_slurm/submit_sox_af3_array.sh
 ```
 

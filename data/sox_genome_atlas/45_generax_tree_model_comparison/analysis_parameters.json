@@ -1,0 +1,6 @@
+{
+  "fixed_model": "LG+F+R6",
+  "alternative": "ModelFinder-selected model per Sox family",
+  "stable_recipient_threshold": 0.5,
+  "interpretation": "Post-boundary model sensitivity only."
+}

@@ -1,0 +1,8 @@
+{
+  "software": "GeneRax 2.0.4",
+  "model": "UndatedDTL",
+  "strategy": "EVAL",
+  "unrooted_gene_tree": true,
+  "reconciliation_samples": 100,
+  "interpretation": "Post-boundary sensitivity; does not alter frozen donor labels or route ranking."
+}
