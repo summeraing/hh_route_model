@@ -1,0 +1,7 @@
+case	architecture	signal_strength	source_regime	method	dominant_source_fraction	mean_dependency_group_size	label_noise_fraction	metric	successes	replicates	rate	ci95_low	ci95_high	mean_margin	median_margin
+full route; 85% adversarial row source	full	0.65	dominant_adversarial	raw_pooled	0.85	5	0.15	full_route_recovered	0	400	0.0	0.0	0.0091798045836652	-0.1811193803711615	-0.1804831861007382
+full route; 85% adversarial row source	full	0.65	dominant_adversarial	source_equal	0.85	5	0.15	full_route_recovered	319	400	0.7975	0.7547278713800812	0.8358052274395471	0.1468168146069771	0.1518165928331742
+full route; 85% adversarial row source	full	0.65	dominant_adversarial	source_equal_dependency_collapsed	0.85	5	0.15	full_route_recovered	326	400	0.815	0.7734130851037768	0.8518508638569526	0.1486405318251743	0.1532062614679716
+partial route; 85% adversarial row source	partial	0.65	dominant_adversarial	raw_pooled	0.85	5	0.15	partial_route_recovered	0	400	0.0	0.0	0.0091798045836652	-0.1800479333477273	-0.1803374212554298
+partial route; 85% adversarial row source	partial	0.65	dominant_adversarial	source_equal	0.85	5	0.15	partial_route_recovered	212	400	0.53	0.4797720991989203	0.579780871111155	0.0708717413716027	0.0723551356517291
+partial route; 85% adversarial row source	partial	0.65	dominant_adversarial	source_equal_dependency_collapsed	0.85	5	0.15	partial_route_recovered	234	400	0.585	0.5349830922328479	0.6337498038598292	0.0727646679463797	0.0766559278073941

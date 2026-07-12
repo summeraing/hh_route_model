@@ -1,0 +1,13 @@
+tree_index	log_likelihood	delta_log_likelihood	bp_rell	p_kh	p_sh	p_wkh	p_wsh	c_elw	p_au	tree_design	family	tree_label	p_sh_holm	p_wsh_holm	p_au_holm
+2	-70216.23143	8468.4	0.0	0.0	0.0	0.0	0.0	0.0	3.49e-06	ModelFinder	soxa	GTDB_constrained_ML	0.0	0.0	1.047e-05
+2	-123713.3377	11342.0	0.0	0.0	0.0	0.0	0.0	0.0	5.48e-33	ModelFinder	soxb	GTDB_constrained_ML	0.0	0.0	3.288e-32
+2	-68277.01189	9694.7	0.0	0.0	0.0	0.0	0.0	0.0	4.74e-07	ModelFinder	soxc	GTDB_constrained_ML	0.0	0.0	2.3699999999999998e-06
+2	-36779.20094	3311.9	0.0	0.0	0.0	0.0	0.0	0.0	8.48e-06	ModelFinder	soxx	GTDB_constrained_ML	0.0	0.0	1.696e-05
+2	-35936.20074	2889.9	0.0	0.0	0.0	0.0	0.0	0.0	1.36e-06	ModelFinder	soxy	GTDB_constrained_ML	0.0	0.0	5.44e-06
+2	-19794.94771	1775.0	0.0	0.0	0.0	0.0	0.0	0.0	2.06e-05	ModelFinder	soxz	GTDB_constrained_ML	0.0	0.0	2.06e-05
+2	-70227.99092	8428.2	0.0	0.0	0.0	0.0	0.0	0.0	6.95e-39	fixed_LG_F_R6	soxa	GTDB_constrained_ML	0.0	0.0	2.085e-38
+2	-123911.2642	11413.0	0.0	0.0	0.0	0.0	0.0	0.0	7.88e-72	fixed_LG_F_R6	soxb	GTDB_constrained_ML	0.0	0.0	3.94e-71
+2	-68324.88937	9666.7	0.0	0.0	0.0	0.0	0.0	0.0	3.64e-06	fixed_LG_F_R6	soxc	GTDB_constrained_ML	0.0	0.0	7.28e-06
+2	-36784.45604	3363.9	0.0	0.0	0.0	0.0	0.0	0.0	1.23e-80	fixed_LG_F_R6	soxx	GTDB_constrained_ML	0.0	0.0	7.38e-80
+2	-35847.9568	2798.0	0.0	0.0	0.0	0.0	0.0	0.0	7.95e-05	fixed_LG_F_R6	soxy	GTDB_constrained_ML	0.0	0.0	7.95e-05
+2	-19795.55285	1724.4	0.0	0.0	0.0	0.0	0.0	0.0	3.75e-43	fixed_LG_F_R6	soxz	GTDB_constrained_ML	0.0	0.0	1.5e-42

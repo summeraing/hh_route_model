@@ -1,0 +1,41 @@
+{
+  "simulation": {
+    "full_route_raw_recovery": 0.0,
+    "full_route_source_equal_recovery": 0.7975,
+    "full_route_source_equal_collapsed_recovery": 0.815,
+    "partial_route_raw_recovery": 0.0,
+    "partial_route_source_equal_recovery": 0.53,
+    "partial_route_source_equal_collapsed_recovery": 0.585,
+    "null_mean_fpr_min": 0.02277777777777778,
+    "null_mean_fpr_max": 0.027962962962962964
+  },
+  "cross_model": {
+    "consensus_min": {
+      "rho": 0.1814055462493064,
+      "p": 0.0281794364112717,
+      "ci95_low": 0.0842749456461578,
+      "ci95_high": 0.2749504988443429
+    },
+    "consensus_mean": {
+      "rho": 0.2022088138916455,
+      "p": 0.0104197916041679,
+      "ci95_low": 0.103176190892325,
+      "ci95_high": 0.2950292055683753
+    },
+    "stable_both": {
+      "rho": 0.1236909067733218,
+      "p": 0.2100757984840303,
+      "ci95_low": 0.0278075202945874,
+      "ci95_high": 0.2147170926456996
+    }
+  },
+  "topology": {
+    "tests": 12,
+    "families": 6,
+    "designs": 2,
+    "delta_log_likelihood_min": 1724.4,
+    "delta_log_likelihood_max": 11413.0,
+    "holm_au_significant": 12,
+    "maximum_holm_au_p": 7.95e-05
+  }
+}

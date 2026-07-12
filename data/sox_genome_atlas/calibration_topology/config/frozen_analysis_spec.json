@@ -1,0 +1,52 @@
+{
+  "spec_id": "imeta_3day_upgrade_20260712_v1",
+  "frozen_at": "2026-07-12T00:00:00+08:00",
+  "principle": "All outcomes, including null or adverse outcomes, are retained and reported.",
+  "simulation": {
+    "seed": 20260712,
+    "donors": 3,
+    "roles": 3,
+    "sources": 5,
+    "dependency_groups": 300,
+    "replicates_per_scenario": 400,
+    "architectures": {
+      "null": [0.0],
+      "full": [0.35, 0.65, 0.9],
+      "partial": [0.35, 0.65, 0.9]
+    },
+    "dominant_source_fraction": [0.2, 0.5, 0.85],
+    "mean_dependency_group_size": [1, 5, 15],
+    "label_noise_fraction": [0.0, 0.15, 0.3],
+    "source_regime": ["homogeneous", "dominant_adversarial"],
+    "methods": ["raw_pooled", "source_equal", "source_equal_dependency_collapsed"],
+    "null_quantile": 0.975,
+    "null_calibration_fraction": 0.5,
+    "primary_metrics": [
+      "prespecified_route_rank1_rate",
+      "margin_above_matched_null_rate",
+      "full_route_recovery_rate",
+      "partial_component_recovery_rate",
+      "diffuse_null_false_positive_rate"
+    ]
+  },
+  "cross_model_consensus": {
+    "seed": 20260712,
+    "permutations": 50000,
+    "bootstraps": 10000,
+    "permutation_block": "GTDB order",
+    "tree_designs": ["fixed_LG_F_R6", "ModelFinder"],
+    "consensus_metrics": ["minimum", "mean", "stable_in_both_at_0.5"],
+    "primary_predictor": "SOX module completeness",
+    "family_omissions": ["soxa", "soxb", "soxc", "soxx", "soxy", "soxz"],
+    "multiple_testing": "Holm within each consensus metric"
+  },
+  "topology_tests": {
+    "families": ["soxa", "soxb", "soxc", "soxx", "soxy", "soxz"],
+    "tree_designs": ["fixed_LG_F_R6", "ModelFinder"],
+    "candidate_trees": ["unconstrained_ML", "GTDB_constrained_ML"],
+    "rell_replicates": 10000,
+    "tests": ["SH", "weighted_SH", "AU"],
+    "multiple_testing": "Holm across six families within each tree design and test",
+    "interpretation": "Rejection of the constrained topology supports discordance beyond sampling error but does not by itself identify transfer direction or timing."
+  }
+}

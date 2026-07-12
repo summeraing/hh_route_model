@@ -1,0 +1,7 @@
+{
+  "spec_id": "imeta_3day_upgrade_20260712_v1",
+  "scenario_files": 7,
+  "replicate_rows": 421200,
+  "null_calibration_replicates_per_cell": 200,
+  "null_evaluation_replicates_per_cell": 200
+}

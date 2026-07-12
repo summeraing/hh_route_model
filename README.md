@@ -17,15 +17,18 @@ Correspondence: zqiangx@gmail.com
 - `code/core/`: core eukaryogenesis reproduction scripts retained from prior releases.
 - `code/route_graph/`: generic route-graph and SOX transfer-case scripts.
 - `code/sox_genome_atlas/`: RefSeq/GTDB comparative-genomics, reconciliation, matched-control and sensitivity scripts.
+- `code/sox_genome_atlas/calibration_topology/`: known-truth calibration, cross-tree consensus and formal topology-test scripts.
 - `code/af3_postprocess/`: AF3 summary and gate-evaluation scripts.
 - `data/source_data/`: consolidated Source Data workbook for the current dual-case manuscript.
 - `data/sox_transfer/`: SOX evidence units, route scores, sensitivity outputs and annotation-stress outputs.
 - `data/sox_genome_atlas/`: processed atlas evidence, family trees, reconciliations, matched controls and model sensitivities.
+- `data/sox_genome_atlas/calibration_topology/`: frozen specifications and complete processed outputs for route-score calibration, fixed/ModelFinder consensus and SH/AU topology tests.
 - `data/sox_af3/`: SOX-AF3 processed summaries, gate calls and target matrices.
 - `af3_jobs/`: compact AF3 JSON and SLURM submission packets used to run the SOX structural screen on a compute node.
 - `data/eukaryogenesis_prior_release/`: selected code/data carried forward from earlier public releases.
 - `figures/final_png/`: final figure PNGs for reader orientation.
 - `metadata/`: release notes, citation file, traceability reports and SHA256 manifest.
+- `slurm/calibration_topology/`: scheduler specifications used for the added server analyses; no production computation was run on the login node.
 
 ## Minimal quick checks
 
@@ -100,6 +103,9 @@ SOX genome atlas:
 - six core families show 36.5-47.4 calibrated transfer events per 100 tips across ModelFinder-selected and fixed-tree analyses;
 - the frozen symmetric three-route map ranks 5 of 6 and is rejected;
 - the retained result is localized HGT-like evidence in the SOX module, with matched mobile and composition controls rejecting a general recent-island explanation.
+- known-truth simulations keep diffuse-null false-positive rates at 2.3-2.8% and show that source-equal scoring recovers localized signals that raw pooling loses under severe source imbalance;
+- fixed-tree and ModelFinder recipient-support profiles agree above permutation expectation (mean cross-tree rho = 0.202, P = 0.0104), while the stable-in-both subset is reported as a boundary result;
+- strict GTDB-constrained topologies are rejected for all six tested SOX families under both tree models after Holm-adjusted AU tests; these tests reject strict congruence but do not infer transfer direction or timing.
 
 Legacy 65-row SOX transfer case:
 
@@ -128,5 +134,5 @@ The analysis code is released under the MIT License. Public-source data and deri
 
 ## Release
 
-Current release tag: `v2026.07.12-sox-genome-atlas`
+Current release tag: `v2026.07.12-calibration-consensus-topology`
 Zenodo concept DOI: https://doi.org/10.5281/zenodo.20453582

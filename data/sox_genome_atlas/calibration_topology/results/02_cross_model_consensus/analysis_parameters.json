@@ -1,0 +1,7 @@
+{
+  "spec_id": "imeta_3day_upgrade_20260712_v1",
+  "permutations": 50000,
+  "bootstraps": 10000,
+  "family_genome_rows": 1453,
+  "genomes": 304
+}

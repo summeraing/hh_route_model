@@ -1,0 +1,17 @@
+{
+  "reports": 12,
+  "families": [
+    "soxa",
+    "soxb",
+    "soxc",
+    "soxx",
+    "soxy",
+    "soxz"
+  ],
+  "tree_designs": [
+    "ModelFinder",
+    "fixed_LG_F_R6"
+  ],
+  "constrained_rejected_au_005": 12,
+  "constrained_rejected_au_holm_005": 12
+}

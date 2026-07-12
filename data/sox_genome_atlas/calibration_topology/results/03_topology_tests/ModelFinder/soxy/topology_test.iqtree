@@ -1,0 +1,639 @@
+IQ-TREE 3.1.1 built Apr  8 2026
+
+Input file name: /jinxianstor/home/xiazhiqiang1/02.work/02.2026_work/01.network_model/SOX_GENOME_ATLAS_R232_20260711/results/31_generax_inputs_modelselected/soxy/soxy.gtdb_shared.trimmed.faa
+Type of analysis: tree reconstruction
+Random seed number: 435095
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+SEQUENCE ALIGNMENT
+------------------
+
+NOTE: Alignment sequence type is auto-detected. If in doubt, specify it via -st option.
+Input data: 245 sequences with 155 amino-acid sites
+Number of constant sites: 9 (= 5.80645% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 9 (= 5.80645% of all sites)
+Number of parsimony informative sites: 143
+Number of distinct site patterns: 152
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: Q.PFAM+I+R8
+
+State frequencies: (model)
+
+Model of rate heterogeneity: Invar+FreeRate with 8 categories
+Proportion of invariable sites: 0.0499
+Site proportion and rates:  (0.0864,0.0498) (0.0562,0.1835) (0.0608,0.3151) (0.1880,0.6231) (0.1198,0.9699) (0.2118,1.2807) (0.1618,1.8254) (0.0652,2.5493)
+
+ Category  Relative_rate  Proportion
+  0         0              0.0499
+  1         0.0498         0.0864
+  2         0.1835         0.0562
+  3         0.3151         0.0608
+  4         0.6231         0.1880
+  5         0.9699         0.1198
+  6         1.2807         0.2118
+  7         1.8254         0.1618
+  8         2.5493         0.0652
+
+STARTING TREE
+-------------
+
+Log-likelihood of the tree: -33277.5222 (s.e. 1513.6753)
+Unconstrained log-likelihood (without tree): -777.0488
+Number of free parameters (#branches + #model parameters): 502
+Akaike information criterion (AIC) score: 67559.0443
+Corrected Akaike information criterion (AICc) score: 572571.0443
+Bayesian information criterion (BIC) score: 69086.8437
+
+**************************** WARNING ****************************
+Number of parameters (K, model parameters and branch lengths): 502
+Sample size (n, alignment length): 155
+
+Given that K>=n, the parameter estimates might be inaccurate.
+Thus, phylogenetic estimates should be interpreted with caution.
+
+Ideally, it is desirable that n >> K. When selecting optimal models,
+1. use AIC or BIC if n > 40K;
+2. use AICc or BIC if 40K >= n > K;
+3. be extremely cautious if n <= K
+
+To improve the situation (3), consider the following options:
+  1. Increase the sample size (n)
+  2. Decrease the number of parameters (K) to be estimated. If
+     possible:
+     a. Remove the least important sequences from the alignment
+     b. Specify some of the parameter values for the substitution
+        model (e.g., the nucleotide or amino acid frequencies)
+     c. Specify some of the parameter values for the rates-across-
+        sites model (e.g., the shape parameter for the discrete
+        Gamma distribution, the proportion of invariable sites, or
+        the rates of change for different rate categories under
+        the FreeRate model)
+
+Reference:
+Burnham KR, Anderson DR (2002). Model Selection and Multimodel
+Inference: A Practical Information-Theoretic Approach. Springer,
+New York.
+************************ END OF WARNING ***********************
+
+Total tree length (sum of branch lengths): 65.9602
+Sum of internal branch lengths: 24.6606 (37.3870% of tree length)
+
+WARNING: 11 near-zero internal branches (<0.0065) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'GCF_000006985.1__soxy__WP_010932696.1__AYT24_RS04680' is drawn at root
+
++--GCF_000006985.1__soxy__WP_010932696.1__AYT24_RS04680
+|
+|                                                        +--GCF_000008625.1__soxy__WP_164930771.1__AQ_RS07090
+|                                                   +----|
+|                                                   |    |     +--GCF_000025605.1__soxy__WP_012991806.1__THAL_RS03865
+|                                                   |    |  +--|
+|                                                   |    |  |  +-----GCF_900142435.1__soxy__WP_079654431.1__B5444_RS06605
+|                                                   |    +--|
+|                                                   |       |  +--GCF_000512735.1__soxy__WP_025306110.1__THERU_RS04625
+|                                                   |       +--|
+|                                                   |          +--GCF_011006175.1__soxy__WP_173832942.1__G3M65_RS02235
+|                                                +--|
+|                                                |  |      +---GCF_000024425.1__soxy__WP_013015102.1__MRUB_RS14370
+|                                                |  +------|
+|                                                |         |     +--GCF_000091545.1__soxy__WP_024119460.1__TTH_RS07195
+|                                                |         |  +--|
+|                                                |         |  |  +--GCF_004684245.1__soxy__WP_135256936.1__EBI04_RS07465
+|                                                |         +--|
+|                                                |            +--GCF_000092125.1__soxy__WP_013159743.1__MESIL_RS17375
+|                                             +--|
+|                                             |  |                                                                       +--GCF_000011965.2__soxy__WP_011046742.1__SPO_RS05005
+|                                             |  |                                                                    +--|
+|                                             |  |                                                                    |  |  +--GCF_000511385.1__soxy__WP_024097569.1__GAL_RS10550
+|                                             |  |                                                                    |  +--|
+|                                             |  |                                                                    |     +--GCF_001888185.1__soxy__WP_072504327.1__PhaeoP97_RS06140
+|                                             |  |                                                                 +--|
+|                                             |  |                                                                 |  |     +--GCF_000511355.1__soxy__WP_024089755.1__METH_RS07095
+|                                             |  |                                                                 |  |  +--|
+|                                             |  |                                                                 |  |  |  +--GCF_025857195.1__soxy__WP_264210039.1__OKQ63_RS10575
+|                                             |  |                                                                 |  +--|
+|                                             |  |                                                                 |     +--GCF_045277565.1__soxy__WP_406645284.1__QEZ52_RS15235
+|                                             |  |                                                              +--|
+|                                             |  |                                                              |  +--GCF_022788655.1__soxy__WP_007120008.1__DSM14862_RS09305
+|                                             |  |                                                           +--|
+|                                             |  |                                                           |  |  +--GCF_029958925.1__soxy__WP_282300446.1__QF118_RS18160
+|                                             |  |                                                           |  +--|
+|                                             |  |                                                           |     +--GCF_040409955.1__soxy__WP_353474639.1__PVT71_RS22095
+|                                             |  |                                                        +--|
+|                                             |  |                                                        |  |     +--GCF_003008555.2__soxy__WP_106471451.1__C6Y53_RS05125
+|                                             |  |                                                        |  |  +--|
+|                                             |  |                                                        |  |  |  +--GCF_008728195.1__soxy__WP_057814367.1__RIdsm_RS08950
+|                                             |  |                                                        |  +--|
+|                                             |  |                                                        |     |        +--GCF_003324675.1__soxy__WP_114075828.1__DRW48_RS07265
+|                                             |  |                                                        |     |     +--|
+|                                             |  |                                                        |     |     |  +--GCF_028553745.1__soxy__WP_089343913.1__JHW44_RS02780
+|                                             |  |                                                        |     |  +--|
+|                                             |  |                                                        |     |  |  +---GCF_028553805.1__soxy__WP_076527296.1__JHX88_RS19125
+|                                             |  |                                                        |     +--|
+|                                             |  |                                                        |        +--GCF_034555965.2__soxy__WP_322865993.1__U5922_RS07165
+|                                             |  |                                                     +--|
+|                                             |  |                                                     |  |  +---GCF_000018145.1__soxy__WP_012179467.1__DSHI_RS14245
+|                                             |  |                                                     |  +--|
+|                                             |  |                                                     |     |     +--GCF_001969385.1__soxy__WP_076622381.1__Ga0080559_RS02740
+|                                             |  |                                                     |     |  +--|
+|                                             |  |                                                     |     |  |  +--GCF_001975705.1__soxy__WP_076696506.1__Ga0080574_RS07160
+|                                             |  |                                                     |     +--|
+|                                             |  |                                                     |        |     +--GCF_009762325.1__soxy__WP_157708562.1__EI983_RS17130
+|                                             |  |                                                     |        |  +--|
+|                                             |  |                                                     |        |  |  +--GCF_040790665.1__soxy__WP_037943596.1__AB1495_RS09435
+|                                             |  |                                                     |        +--|
+|                                             |  |                                                     |           +--GCF_025639885.1__soxy__WP_165197247.1__N7U68_RS06180
+|                                             |  |                                                  +--|
+|                                             |  |                                                  |  |   +--GCF_016806125.1__soxy__WP_023851826.1__GQA70_RS14060
+|                                             |  |                                                  |  +---|
+|                                             |  |                                                  |      +--GCF_039724765.1__soxy__WP_005863280.1__ABFK29_RS16740
+|                                             |  |                                               +--|
+|                                             |  |                                               |  |     +--GCF_001308265.1__soxy__WP_062215876.1__IMCC12053_RS03700
+|                                             |  |                                               |  |  +--|
+|                                             |  |                                               |  |  |  +---GCF_003544895.1__soxy__WP_118941672.1__BAR1_RS03160
+|                                             |  |                                               |  +--|
+|                                             |  |                                               |     +--GCF_040580765.1__soxy__WP_089890067.1__DSM117340_RS09210
+|                                             |  |                                            +--|
+|                                             |  |                                            |  |     +--GCF_000590925.1__soxy__WP_025312361.1__ROSELON_RS10530
+|                                             |  |                                            |  |  +--|
+|                                             |  |                                            |  |  |  +--GCF_030407165.1__soxy__WP_290151564.1__QTA57_RS11570
+|                                             |  |                                            |  +--|
+|                                             |  |                                            |     +--GCF_038443675.1__soxy__WP_055295994.1__AABB28_RS01190
+|                                             |  |                                         +--|
+|                                             |  |                                         |  |  +--GCF_001187845.1__soxy__WP_049834220.1__OSB_RS06495
+|                                             |  |                                         |  +--|
+|                                             |  |                                         |     +--GCF_005234135.1__soxy__WP_137193382.1__EOK75_RS07790
+|                                             |  |                                      +--|
+|                                             |  |                                      |  |  +--GCF_001620265.1__soxy__WP_066818577.1__AKL17_RS14970
+|                                             |  |                                      |  +--|
+|                                             |  |                                      |     |     +--GCF_008824185.1__soxy__WP_024845875.1__ESD82_RS03405
+|                                             |  |                                      |     |  +--|
+|                                             |  |                                      |     |  |  +--GCF_029953595.1__soxy__WP_281465000.1__QF092_RS14885
+|                                             |  |                                      |     +--|
+|                                             |  |                                      |        +--GCF_014126615.1__soxy__WP_182308275.1__H4I97_RS18095
+|                                             |  |                                   +--|
+|                                             |  |                                   |  |     +--GCF_000154785.2__soxy__WP_013963053.1__RLO149_RS15520
+|                                             |  |                                   |  |  +--|
+|                                             |  |                                   |  |  |  +--GCF_014337925.2__soxy__WP_187431894.1__ROLI_RS20215
+|                                             |  |                                   |  +--|
+|                                             |  |                                   |     |     +--GCF_004006175.1__soxy__WP_127747559.1__EBB79_RS03245
+|                                             |  |                                   |     |  +--|
+|                                             |  |                                   |     |  |  +--GCF_030285785.1__soxy__WP_270920337.1__QPJ95_RS19750
+|                                             |  |                                   |     +--|
+|                                             |  |                                   |        |           +--GCF_012932215.1__soxy__WP_169641566.1__G3256_RS14825
+|                                             |  |                                   |        |        +**|
+|                                             |  |                                   |        |        |  +--GCF_032842945.2__soxy__WP_317057515.1__RZS32_RS13620
+|                                             |  |                                   |        |     +--|
+|                                             |  |                                   |        |     |  +--GCF_047715485.1__soxy__WP_415404400.1__ACMHLQ_RS08800
+|                                             |  |                                   |        |  +--|
+|                                             |  |                                   |        |  |  +--GCF_026191725.2__soxy__WP_152500867.1__K1718_RS10455
+|                                             |  |                                   |        +--|
+|                                             |  |                                   |           +--GCF_044772865.1__soxy__WP_420860633.1__ACIRQ6_RS10995
+|                                             |  |                                +--|
+|                                             |  |                                |  |  +--GCF_002504165.1__soxy__WP_088661670.1__CBW24_RS10535
+|                                             |  |                                |  +--|
+|                                             |  |                                |     +--GCF_029853695.1__soxy__WP_279966556.1__P8627_RS05050
+|                                             |  |                             +--|
+|                                             |  |                             |  +----GCF_002865605.1__soxy__WP_101500230.1__CYR75_RS11905
+|                                             |  |                          +**|
+|                                             |  |                          |  +----GCF_001633165.1__soxy__WP_042460797.1__A6W98_RS09545
+|                                             |  |                       +--|
+|                                             |  |                       |  |  +--GCF_001940525.2__soxy__WP_075775684.1__BMG03_RS14385
+|                                             |  |                       |  +--|
+|                                             |  |                       |     +**GCF_002085925.2__soxy__WP_078520152.1__AKL02_RS13815
+|                                             |  |                    +--|
+|                                             |  |                    |  +--GCF_018282095.1__soxy__WP_075700183.1__KGB56_RS04675
+|                                             |  |                 +--|
+|                                             |  |                 |  +-----GCF_024662015.1__soxy__WP_257771097.1__NUH88_RS07555
+|                                             |  |              +--|
+|                                             |  |              |  |        +---GCF_000154705.2__soxy__WP_040449242.1__HPDFL43_RS13910
+|                                             |  |              |  |     +--|
+|                                             |  |              |  |     |  |              +--GCF_000192745.1__soxy__WP_013653432.1__SL003B_RS13585
+|                                             |  |              |  |     |  |           +--|
+|                                             |  |              |  |     |  |           |  +---GCF_026898155.1__soxy__WP_407936840.1__OH818_RS03515
+|                                             |  |              |  |     |  |        +--|
+|                                             |  |              |  |     |  |        |  +-------GCF_002215215.1__soxy__WP_088918115.1__IMCC3135_RS13575
+|                                             |  |              |  |     |  |     +--|
+|                                             |  |              |  |     |  |     |  +---GCF_016806835.2__soxy__WP_203096494.1__JL101_RS21065
+|                                             |  |              |  |     |  |  +--|
+|                                             |  |              |  |     |  |  |  |  +--GCF_014495845.1__soxy__WP_187969819.1__IAI54_RS25335
+|                                             |  |              |  |     |  |  |  +--|
+|                                             |  |              |  |     |  |  |     +---------GCF_016653635.2__soxy__WP_201074587.1__IGS68_RS23560
+|                                             |  |              |  |     |  +--|
+|                                             |  |              |  |     |     |  +--GCF_000967425.1__soxy__WP_052639132.1__NT26_RS12505
+|                                             |  |              |  |     |     +--|
+|                                             |  |              |  |     |        |  +--GCF_001889605.1__soxy__WP_072603837.1__BSQ44_RS10545
+|                                             |  |              |  |     |        +--|
+|                                             |  |              |  |     |           |  +---GCF_001953055.1__soxy__WP_075996148.1__BVL55_RS06070
+|                                             |  |              |  |     |           +--|
+|                                             |  |              |  |     |              +--GCF_007922615.2__soxy__WP_146301280.1__FQ775_RS13720
+|                                             |  |              |  |  +--|
+|                                             |  |              |  |  |  |  +--GCF_000158095.2__soxy__WP_008191229.1__SADFL11_RS21840
+|                                             |  |              |  |  |  +--|
+|                                             |  |              |  |  |     +--GCF_001999245.1__soxy__WP_023014500.1__B0E33_RS18020
+|                                             |  |              |  +--|
+|                                             |  |              |     |     +--GCF_003403095.1__soxy__WP_064789182.1__DY252_RS12530
+|                                             |  |              |     |  +--|
+|                                             |  |              |     |  |  +--GCF_013358405.1__soxy__WP_175275479.1__HTY61_RS03390
+|                                             |  |              |     +--|
+|                                             |  |              |        +----GCF_009789575.1__soxy__WP_158192331.1__GH266_RS01580
+|                                             |  |           +**|
+|                                             |  |           |  |     +--GCF_001579845.1__soxy__WP_068025939.1__RHPLAN_RS29515
+|                                             |  |           |  |  +--|
+|                                             |  |           |  |  |  +----GCF_002355335.1__soxy__WP_096354174.1__GJW30_RS08465
+|                                             |  |           |  +--|
+|                                             |  |           |     +--GCF_002119765.1__soxy__WP_086090112.1__CAK95_RS23455
+|                                             |  |        +--|
+|                                             |  |        |  |  +------GCF_026409565.1__soxy__WP_407696691.1__OIR97_RS01950
+|                                             |  |        |  +--|
+|                                             |  |        |     +----------GCF_027923555.1__soxy__WP_317997153.1__WPS_RS07210
+|                                             |  |     +--|
+|                                             |  |     |  |         +--GCF_000092925.1__soxy__WP_013165799.1__SNOV_RS04865
+|                                             |  |     |  |      +--|
+|                                             |  |     |  |      |  +--GCF_016807805.1__soxy__WP_203193888.1__EZH22_RS00525
+|                                             |  |     |  |   +--|
+|                                             |  |     |  |   |  |  +--GCF_018279705.1__soxy__WP_211912262.1__RPMA_RS07690
+|                                             |  |     |  |   |  +--|
+|                                             |  |     |  |   |     +--GCF_030413175.1__soxy__WP_300946726.1__QUH67_RS11115
+|                                             |  |     |  +---|
+|                                             |  |     |      +--GCF_005144885.1__soxy__WP_136963590.1__E8M01_RS30440
+|                                             |  |  +--|
+|                                             |  |  |  +-------GCF_029318635.1__soxy__WP_132938250.1__P3M64_RS02475
+|                                             |  +--|
+|                                             |     |  +---GCF_000021545.1__soxy__WP_012674775.1__SULAZ_RS08225
+|                                             |     +--|
+|                                             |        |  +---GCF_000021565.1__soxy__WP_012675707.1__PERMA_RS09395
+|                                             |        +--|
+|                                             |           |      +--GCF_000183725.1__soxy__WP_013459310.1__SULKU_RS02275
+|                                             |           |   +--|
+|                                             |           |   |  +-----GCF_039645985.1__soxy__WP_345977311.1__WCY20_RS04410
+|                                             |           +---|
+|                                             |               +------GCF_027943725.1__soxy__WP_281951708.1__QML81_RS02955
+|                                          +--|
+|                                          |  |                 +--GCF_000092245.1__soxy__WP_013135614.1__ARNIT_RS09040
+|                                          |  |              +--|
+|                                          |  |              |  +--GCF_042214795.1__soxy__WP_375723859.1__LXN10_RS15395
+|                                          |  |           +--|
+|                                          |  |           |  |     +--GCF_003346815.1__soxy__WP_114839208.1__ABIV_RS07130
+|                                          |  |           |  |  +--|
+|                                          |  |           |  |  |  |  +--GCF_006459125.1__soxy__WP_179951800.1__AANAER_RS08130
+|                                          |  |           |  |  |  +--|
+|                                          |  |           |  |  |     +--GCF_013201825.1__soxy__WP_228712195.1__AEBR_RS08175
+|                                          |  |           |  +**|
+|                                          |  |           |     |  +--GCF_013283835.1__soxy__WP_071626879.1__ALEK_RS14440
+|                                          |  |           |     +--|
+|                                          |  |           |        +--GCF_024267655.1__soxy__WP_254576198.1__NJU99_RS12260
+|                                          |  |        +--|
+|                                          |  |        |  |              +--GCF_003355515.1__soxy__WP_115428494.1__ATR_RS05595
+|                                          |  |        |  |           +--|
+|                                          |  |        |  |           |  +--GCF_003660105.1__soxy__WP_105916639.1__ACRYA_RS06055
+|                                          |  |        |  |        +--|
+|                                          |  |        |  |        |  |           +--GCF_003544815.1__soxy__WP_118885715.1__ASUIS_RS03335
+|                                          |  |        |  |        |  |        +--|
+|                                          |  |        |  |        |  |        |  +--GCF_013177675.1__soxy__WP_172125206.1__AACT_RS04105
+|                                          |  |        |  |        |  |     +**|
+|                                          |  |        |  |        |  |     |  +--GCF_013201935.1__soxy__WP_129012887.1__ACLO_RS03465
+|                                          |  |        |  |        |  |  +--|
+|                                          |  |        |  |        |  |  |  +--GCF_013177635.1__soxy__WP_129096088.1__AAQM_RS03070
+|                                          |  |        |  |        |  +--|
+|                                          |  |        |  |        |     |  +--GCF_003544915.1__soxy__WP_118916619.1__AELL_RS03535
+|                                          |  |        |  |        |     +--|
+|                                          |  |        |  |        |        +--GCF_013201725.1__soxy__WP_014473403.1__ADFLV_RS03510
+|                                          |  |        |  |     +--|
+|                                          |  |        |  |     |  |  +--GCF_003544835.1__soxy__WP_066162316.1__ASKIR_RS02325
+|                                          |  |        |  |     |  +--|
+|                                          |  |        |  |     |     |  +--GCF_004214815.1__soxy__WP_066181329.1__ATH_RS07830
+|                                          |  |        |  |     |     +--|
+|                                          |  |        |  |     |        +**GCF_004299785.2__soxy__WP_066171381.1__APORC_RS08275
+|                                          |  |        |  |  +--|
+|                                          |  |        |  |  |  |  +--GCF_013201625.1__soxy__WP_026807439.1__ALANTH_RS02925
+|                                          |  |        |  |  |  +--|
+|                                          |  |        |  |  |     |  +--GCF_013201705.1__soxy__WP_026805907.1__AFAEC_RS03780
+|                                          |  |        |  |  |     +--|
+|                                          |  |        |  |  |        +--GCF_013372265.1__soxy__WP_024775256.1__ACBT_RS04740
+|                                          |  |        |  +--|
+|                                          |  |        |     |  +--GCF_003544855.1__soxy__WP_099310941.1__AMRN_RS03475
+|                                          |  |        |     +--|
+|                                          |  |        |        +--GCF_003544935.1__soxy__WP_099341932.1__AMOL_RS03115
+|                                          |  |     +--|
+|                                          |  |     |  +--GCF_001956695.1__soxy__WP_076088216.1__LPB137_RS11525
+|                                          |  +-----|
+|                                          |        +------GCF_000186245.1__soxy__WP_013553330.1__NITSA_RS01865
+|                                       +--|
+|                                       |  +-----------GCF_001723605.1__soxy__WP_069478795.1__SHALO_RS12445
+|                                    +--|
+|                                    |  |            +--GCF_000153125.2__soxy__WP_023659831.1__KT71_RS02305
+|                                    |  |         +--|
+|                                    |  |         |  +--GCF_045689245.1__soxy__WP_407327909.1__R0137_RS01195
+|                                    |  |    +----|
+|                                    |  |    |    +--GCF_045689235.1__soxy__WP_407347289.1__R0135_RS13005
+|                                    |  +----|
+|                                    |       +-------------GCF_009910365.1__soxy__WP_009576270.1__EYZ66_RS09755
+|                                 +--|
+|                                 |  +-------GCF_001305575.3__soxy__WP_062152279.1__AL038_RS09635
+|                              +--|
+|                              |  |                                               +--GCF_000015725.1__soxy__WP_036231508.1__MPE_RS12280
+|                              |  |                                            +--|
+|                              |  |                                            |  +--GCF_000019785.1__soxy__WP_012348783.1__LCHO_RS18825
+|                              |  |                                         +**|
+|                              |  |                                         |  +--GCF_021049305.1__soxy__WP_151124204.1__LRM40_RS06595
+|                              |  |                                      +--|
+|                              |  |                                      |  +--GCF_023734135.1__soxy__WP_251971050.1__NGK70_RS24520
+|                              |  |                                   +--|
+|                              |  |                                   |  +--GCF_002222655.1__soxy__WP_089416043.1__VITFI_RS04895
+|                              |  |                                +--|
+|                              |  |                                |  +---GCF_030254645.1__soxy__WP_285235640.1__PFX98_RS19385
+|                              |  |                             +--|
+|                              |  |                             |  |     +--GCF_000215705.1__soxy__WP_013900699.1__RTA_RS07065
+|                              |  |                             |  |  +--|
+|                              |  |                             |  |  |  |           +--GCF_003008575.1__soxy__WP_106683786.1__C6568_RS08795
+|                              |  |                             |  |  |  |        +--|
+|                              |  |                             |  |  |  |        |  +--GCF_017498525.1__soxy__WP_208010112.1__J1M35_RS04735
+|                              |  |                             |  |  |  |     +--|
+|                              |  |                             |  |  |  |     |  +--GCF_007954405.1__soxy__WP_146911462.1__FOZ74_RS01830
+|                              |  |                             |  |  |  |  +--|
+|                              |  |                             |  |  |  |  |  +--GCF_006970865.1__soxy__WP_142817510.1__EUB48_RS02735
+|                              |  |                             |  |  |  +--|
+|                              |  |                             |  |  |     +--GCF_019973615.1__soxy__WP_223911824.1__LDN84_RS09770
+|                              |  |                             |  +--|
+|                              |  |                             |     |  +--GCF_014395975.1__soxy__WP_187596175.1__H9K76_RS15020
+|                              |  |                             |     +--|
+|                              |  |                             |        +--GCF_014489595.1__soxy__WP_187736487.1__H9L24_RS00235
+|                              |  |                          +--|
+|                              |  |                          |  |    +--GCF_000253115.1__soxy__WP_013106572.1__THI_RS12255
+|                              |  |                          |  +----|
+|                              |  |                          |       +--GCF_002028405.1__soxy__WP_079418914.1__BVH73_RS11825
+|                              |  |                       +--|
+|                              |  |                       |  |  +--GCF_001017435.1__soxy__WP_417903601.1__AAW51_RS11330
+|                              |  |                       |  +--|
+|                              |  |                       |     +--GCF_026013905.1__soxy__WP_264891372.1__OMP39_RS08775
+|                              |  |                    +--|
+|                              |  |                    |  +--------GCF_050749815.1__soxy__WP_431634348.1__ACQVBX_RS12165
+|                              |  |                 +--|
+|                              |  |                 |  |     +---------GCF_000219915.2__soxy__WP_041709140.1__TKWG_RS07265
+|                              |  |                 |  |  +--|
+|                              |  |                 |  |  |  |   +--GCF_013004065.1__soxy__WP_105028914.1__HKT17_RS06685
+|                              |  |                 |  |  |  +---|
+|                              |  |                 |  |  |      +--GCF_036323495.1__soxy__WP_130556579.1__RGQ30_RS07125
+|                              |  |                 |  +--|
+|                              |  |                 |     +---GCF_009746125.1__soxy__WP_156863876.1__FKL89_RS16745
+|                              |  |              +--|
+|                              |  |              |  |                                +--GCF_000016345.1__soxy__WP_011902646.1__PNUC_RS04180
+|                              |  |              |  |                             +**|
+|                              |  |              |  |                             |  +--GCF_013307225.1__soxy__WP_173955861.1__DCO17_RS06055
+|                              |  |              |  |                          +--|
+|                              |  |              |  |                          |  +--GCF_018687595.1__soxy__WP_112205038.1__AOC06_RS06915
+|                              |  |              |  |                       +--|
+|                              |  |              |  |                       |  +--GCF_018687955.1__soxy__WP_215361666.1__AOC20_RS03890
+|                              |  |              |  |                    +--|
+|                              |  |              |  |                    |  |  +--GCF_000973625.1__soxy__WP_046330213.1__CL55_RS05590
+|                              |  |              |  |                    |  +--|
+|                              |  |              |  |                    |     +--GCF_018688255.1__soxy__WP_215307216.1__C2747_RS05690
+|                              |  |              |  |                 +--|
+|                              |  |              |  |                 |  +--GCF_003065385.1__soxy__WP_108508443.1__AOC32_RS05075
+|                              |  |              |  |              +--|
+|                              |  |              |  |              |  |  +--GCF_001659725.1__soxy__WP_068948421.1__A8O14_RS04420
+|                              |  |              |  |              |  +--|
+|                              |  |              |  |              |     +--GCF_900096765.1__soxy__WP_114639696.1__DXE33_RS02420
+|                              |  |              |  |           +--|
+|                              |  |              |  |           |  |  +--GCF_003065365.1__soxy__WP_108469086.1__AOC34_RS05260
+|                              |  |              |  |           |  +--|
+|                              |  |              |  |           |     +--GCF_013307245.1__soxy__WP_173942694.1__DCO16_RS05310
+|                              |  |              |  |        +--|
+|                              |  |              |  |        |  +----GCF_022811525.1__soxy__WP_243477911.1__DHf2319_RS09160
+|                              |  |              |  |     +--|
+|                              |  |              |  |     |  +--GCF_964332355.1__soxy__WP_009522856.1__ACQ3C8_RS14310
+|                              |  |              |  |  +--|
+|                              |  |              |  |  |  |                 +**GCF_000069785.1__soxy__WP_012354209.1__RALTA_RS14775
+|                              |  |              |  |  |  |              +--|
+|                              |  |              |  |  |  |              |  +--GCF_001598055.1__soxy__WP_062795731.1__A2G96_RS00275
+|                              |  |              |  |  |  |           +--|
+|                              |  |              |  |  |  |           |  +**GCF_000219215.1__soxy__WP_013958319.1__CNE_RS17195
+|                              |  |              |  |  |  |        +--|
+|                              |  |              |  |  |  |        |  +--GCF_016894385.1__soxy__WP_063240926.1__JTE92_RS29350
+|                              |  |              |  |  |  |     +--|
+|                              |  |              |  |  |  |     |  +--GCF_001854325.1__soxy__WP_071010245.1__BKK80_RS00205
+|                              |  |              |  |  |  |  +--|
+|                              |  |              |  |  |  |  |  +--GCF_008801925.2__soxy__WP_043350495.1__F7R26_RS19405
+|                              |  |              |  |  |  +--|
+|                              |  |              |  |  |     |   +**GCF_018243235.1__soxy__WP_016722440.1__GO999_RS00970
+|                              |  |              |  |  |     +---|
+|                              |  |              |  |  |         +--GCF_024925465.1__soxy__WP_197365654.1__NY025_RS08630
+|                              |  |              |  +--|
+|                              |  |              |     |                  +**GCF_000807775.2__soxy__WP_039372958.1__PI93_RS23625
+|                              |  |              |     |               +--|
+|                              |  |              |     |               |  +**GCF_001465595.2__soxy__WP_039372958.1__AT395_RS00940
+|                              |  |              |     |            +**|
+|                              |  |              |     |            |  +--GCF_001465545.3__soxy__WP_058376480.1__AT302_RS26110
+|                              |  |              |     |         +**|
+|                              |  |              |     |         |  +--GCF_000815105.2__soxy__WP_039406557.1__RO07_RS24365
+|                              |  |              |     |      +--|
+|                              |  |              |     |      |  +**GCF_000972785.3__soxy__WP_039393898.1__MB84_RS23810
+|                              |  |              |     |   +**|
+|                              |  |              |     |   |  +--GCF_001029105.3__soxy__WP_047906292.1__AB870_RS22050
+|                              |  |              |     +---|
+|                              |  |              |         +--GCF_000934605.2__soxy__WP_044457411.1__UC34_RS23600
+|                              |  |           +--|
+|                              |  |           |  |     +--GCF_015689335.1__soxy__WP_206088501.1__IV454_RS25895
+|                              |  |           |  |  +--|
+|                              |  |           |  |  |  +--GCF_045016065.1__soxy__WP_126071998.1__HF313_RS19170
+|                              |  |           |  +--|
+|                              |  |           |     |  +--GCF_021165955.1__soxy__WP_231769625.1__LSQ66_RS09980
+|                              |  |           |     +--|
+|                              |  |           |        +--GCF_900130075.1__soxy__WP_076594043.1__BQ6873_RS09185
+|                              |  |        +--|
+|                              |  |        |  |  +-----GCF_000022145.1__soxy__WP_011421336.1__A2CP1_RS08370
+|                              |  |        |  +--|
+|                              |  |        |     |     +--GCF_001305595.1__soxy__WP_045585669.1__AL072_RS27990
+|                              |  |        |     |  +--|
+|                              |  |        |     |  |  +----GCF_040269895.1__soxy__WP_407048891.1__ABS361_RS17150
+|                              |  |        |     +--|
+|                              |  |        |        |     +----GCF_002872475.1__soxy__WP_102247505.1__C0099_RS11275
+|                              |  |        |        |  +--|
+|                              |  |        |        |  |  |  +---GCF_008274805.1__soxy__WP_342780112.1__OTERR_RS03510
+|                              |  |        |        |  |  +--|
+|                              |  |        |        |  |     |  +--GCF_010983895.1__soxy__WP_173766465.1__G3580_RS13945
+|                              |  |        |        |  |     +--|
+|                              |  |        |        |  |        +--GCF_017309585.1__soxy__WP_227817614.1__J0W34_RS15395
+|                              |  |        |        +--|
+|                              |  |        |           +------GCF_003574215.1__soxy__WP_119334856.1__HPTL_RS04200
+|                              |  |     +--|
+|                              |  |     |  |     +--GCF_001761385.1__soxy__WP_066085293.1__LPB072_RS18265
+|                              |  |     |  |  +--|
+|                              |  |     |  |  |  +--GCF_011388215.1__soxy__WP_166223533.1__G9Q37_RS01520
+|                              |  |     |  +--|
+|                              |  |     |     +------GCF_047549485.1__soxy__WP_377301083.1__ACMDW7_RS09750
+|                              |  |  +--|
+|                              |  |  |  |     +---GCF_000025705.1__soxy__WP_013029830.1__SLIT_RS08500
+|                              |  |  |  |  +--|
+|                              |  |  |  |  |  +--GCF_000297055.2__soxy__WP_041674088.1__SCD_RS11915
+|                              |  |  |  +--|
+|                              |  |  |     |  +--GCF_003967275.1__soxy__WP_126462411.1__EL388_RS08565
+|                              |  |  |     +--|
+|                              |  |  |        |     +--GCF_009937995.1__soxy__WP_162083614.1__SFSGTM_RS01510
+|                              |  |  |        |  +--|
+|                              |  |  |        |  |  +--GCF_009938015.1__soxy__WP_147070039.1__GZH91_RS14985
+|                              |  |  |        +--|
+|                              |  |  |           +--GCF_035621355.1__soxy__WP_324780409.1__VA613_RS03145
+|                              |  +--|
+|                              |     +----GCF_004786015.1__soxy__WP_135795303.1__GHNINEIG_RS03170
+|                           +--|
+|                           |  |   +--GCF_008630635.1__soxy__WP_138988521.1__F0U83_RS06360
+|                           |  +---|
+|                           |      |   +--GCF_024347195.1__soxy__WP_205660002.1__PCI15_RS08345
+|                           |      +---|
+|                           |          +--GCF_024347215.1__soxy__WP_261844541.1__OCU49_RS08455
+|                        +--|
+|                        |  |              +--GCF_000024765.1__soxy__WP_012824922.1__HNEAP_RS10310
+|                        |  |           +--|
+|                        |  |           |  +--GCF_001663815.1__soxy__WP_066101034.1__A9404_RS10105
+|                        |  |        +--|
+|                        |  |        |  +--GCF_034479635.1__soxy__WP_322521748.1__SR882_RS02325
+|                        |  |     +--|
+|                        |  |     |  |   +--GCF_001753165.1__soxy__WP_070073939.1__BJI67_RS04035
+|                        |  |     |  +---|
+|                        |  |     |      +--GCF_001753245.1__soxy__WP_070079247.1__BI364_RS13840
+|                        |  |  +--|
+|                        |  |  |  +-----GCF_009497875.2__soxy__WP_153296415.1__D5125_RS11005
+|                        |  +--|
+|                        |     +----GCF_000828615.1__soxy__WP_041068685.1__TBH_RS12115
+|                     +--|
+|                     |  |             +--GCF_000227685.2__soxy__WP_006746493.1__THITH_RS00470
+|                     |  |        +----|
+|                     |  |        |    +--GCF_000321415.2__soxy__WP_015256950.1__TVNIR_RS00360
+|                     |  |     +--|
+|                     |  |     |  +--GCF_047222355.1__soxy__WP_412851705.1__ACLF6L_RS11530
+|                     |  |  +--|
+|                     |  |  |  |          +--GCF_003721225.2__soxy__WP_123102320.1__EC580_RS04170
+|                     |  |  |  |    +-----|
+|                     |  |  |  |    |     +--GCF_010378095.2__soxy__WP_163097775.1__GL267_RS08370
+|                     |  |  |  +----|
+|                     |  |  |       +--GCF_048300925.1__soxy__WP_211218659.1__RG903_RS03560
+|                     |  +**|
+|                     |     +----------GCF_009650135.1__soxy__WP_246164715.1__GH975_RS09720
+|                  +--|
+|                  |  |           +--GCF_000025485.1__soxy__WP_012971305.1__ALVIN_RS10525
+|                  |  |        +--|
+|                  |  |        |  +----GCF_011290485.1__soxy__WP_343033116.1__GWK36_RS09085
+|                  |  |     +--|
+|                  |  |     |  +--GCF_000227745.2__soxy__WP_014779428.1__THIVI_RS15205
+|                  |  |  +--|
+|                  |  |  |  +--GCF_000224005.2__soxy__WP_005221306.1__MARPU_RS13465
+|                  |  +--|
+|                  |     +---GCF_033954455.1__soxy__WP_201068850.1__Thiosp_RS02495
+|               +--|
+|               |  +----------GCF_000015585.1__soxy__WP_011814727.1__HHAL_RS09810
+|            +--|
+|            |  |              +--GCF_000013885.1__soxy__WP_011512043.1__NHAM_RS18850
+|            |  |           +--|
+|            |  |           |  |     +--GCF_001693515.2__soxy__WP_065750816.1__LMTR21_RS37475
+|            |  |           |  |  +--|
+|            |  |           |  |  |  |  +--GCF_011516645.4__soxy__WP_166213480.1__HAP48_RS12960
+|            |  |           |  |  |  +--|
+|            |  |           |  |  |     +--GCF_023278185.1__soxy__WP_016848046.1__JEY66_RS40780
+|            |  |           |  +--|
+|            |  |           |     |                    +--GCF_004114935.1__soxy__WP_128930840.1__XH85_RS03970
+|            |  |           |     |                 +--|
+|            |  |           |     |                 |  +--GCF_021044685.1__soxy__WP_145638574.1__LPJ38_RS02455
+|            |  |           |     |              +--|
+|            |  |           |     |              |  +--GCF_045571495.1__soxy__WP_407186139.1__P6U31_RS34975
+|            |  |           |     |           +--|
+|            |  |           |     |           |  +--GCF_008932115.1__soxy__WP_162006373.1__F8237_RS13320
+|            |  |           |     |        +--|
+|            |  |           |     |        |  +--GCF_027594865.1__soxy__WP_270163916.1__I3J27_RS37975
+|            |  |           |     |     +--|
+|            |  |           |     |     |  +--GCF_015291705.1__soxy__WP_027563198.1__WN72_RS45665
+|            |  |           |     |  +--|
+|            |  |           |     |  |  |  +--GCF_015624505.1__soxy__WP_195801141.1__IC761_RS34950
+|            |  |           |     |  |  +--|
+|            |  |           |     |  |     +--GCF_049949285.1__soxy__WP_426410947.1__ACLFLU_RS03380
+|            |  |           |     +--|
+|            |  |           |        +--GCF_041200145.1__soxy__WP_369720473.1__AB8Z38_RS25335
+|            |  |        +--|
+|            |  |        |  +--GCF_018736085.1__soxy__WP_215622419.1__KMZ29_RS03190
+|            |  |     +--|
+|            |  |     |  |  +--GCF_000218565.1__soxy__WP_012562346.1__OCA5_RS14025
+|            |  |     |  +--|
+|            |  |     |     +--GCF_029030725.1__soxy__WP_275246335.1__AFIC_RS11305
+|            |  |  +--|
+|            |  |  |  +------GCF_000202835.1__soxy__WP_231844445.1__ACMV_RS16845
+|            |  +--|
+|            |     |  +----------GCF_000968535.2__soxy__WP_014147805.1__MEALZ_RS06435
+|            |     +--|
+|            |        |   +--GCF_001854125.1__soxy__WP_070967319.1__BKP64_RS06055
+|            |        +---|
+|            |            +--GCF_017301335.1__soxy__WP_206643107.1__LPB19_RS11845
+|       +----|
+|       |    +--------GCF_033723955.1__soxy__WP_318953218.1__R5R33_RS13465
+|  +----|
+|  |    +-----GCF_002795845.1__soxy__WP_100257707.1__REIFOR_RS11555
++--|
+|  +--GCF_000020505.1__soxy__WP_012502321.1__CPAR_RS05495
+|
++--GCF_001747405.1__soxy__WP_069809589.1__BIU88_RS05995
+
+Tree in newick format:
+
+(GCF_000006985.1__soxy__WP_010932696.1__AYT24_RS04680:0.0576682601,(((((((((((((((((GCF_000008625.1__soxy__WP_164930771.1__AQ_RS07090:0.2485276399,((GCF_000025605.1__soxy__WP_012991806.1__THAL_RS03865:0.2538204894,GCF_900142435.1__soxy__WP_079654431.1__B5444_RS06605:0.4255010405):0.0636735024,(GCF_000512735.1__soxy__WP_025306110.1__THERU_RS04625:0.1262562585,GCF_011006175.1__soxy__WP_173832942.1__G3M65_RS02235:0.1100922392):0.0270243886):0.2585070141):0.3467917600,(GCF_000024425.1__soxy__WP_013015102.1__MRUB_RS14370:0.2676851162,((GCF_000091545.1__soxy__WP_024119460.1__TTH_RS07195:0.0911918700,GCF_004684245.1__soxy__WP_135256936.1__EBI04_RS07465:0.1575100971):0.1612932441,GCF_000092125.1__soxy__WP_013159743.1__MESIL_RS17375:0.2001542647):0.1212553423):0.4816662894):0.2586460942,((((((((((((((((((((((((GCF_000011965.2__soxy__WP_011046742.1__SPO_RS05005:0.0990781830,(GCF_000511385.1__soxy__WP_024097569.1__GAL_RS10550:0.0693622858,GCF_001888185.1__soxy__WP_072504327.1__PhaeoP97_RS06140:0.0227203196):0.0549834828):0.0524410328,((GCF_000511355.1__soxy__WP_024089755.1__METH_RS07095:0.0754840324,GCF_025857195.1__soxy__WP_264210039.1__OKQ63_RS10575:0.1365932592):0.0595871193,GCF_045277565.1__soxy__WP_406645284.1__QEZ52_RS15235:0.0571861249):0.0432621517):0.0316495424,GCF_022788655.1__soxy__WP_007120008.1__DSM14862_RS09305:0.2011778570):0.0512132225,(GCF_029958925.1__soxy__WP_282300446.1__QF118_RS18160:0.1242919787,GCF_040409955.1__soxy__WP_353474639.1__PVT71_RS22095:0.2306753810):0.0602382726):0.0170461932,((GCF_003008555.2__soxy__WP_106471451.1__C6Y53_RS05125:0.0961850047,GCF_008728195.1__soxy__WP_057814367.1__RIdsm_RS08950:0.1032726657):0.1630895264,(((GCF_003324675.1__soxy__WP_114075828.1__DRW48_RS07265:0.2494450431,GCF_028553745.1__soxy__WP_089343913.1__JHW44_RS02780:0.1443401520):0.0429447327,GCF_028553805.1__soxy__WP_076527296.1__JHX88_RS19125:0.2645474051):0.1593497061,GCF_034555965.2__soxy__WP_322865993.1__U5922_RS07165:0.1712452322):0.0438267073):0.0465366375):0.0362117884,(GCF_000018145.1__soxy__WP_012179467.1__DSHI_RS14245:0.2614876688,((GCF_001969385.1__soxy__WP_076622381.1__Ga0080559_RS02740:0.0437437704,GCF_001975705.1__soxy__WP_076696506.1__Ga0080574_RS07160:0.0281853152):0.2063643055,((GCF_009762325.1__soxy__WP_157708562.1__EI983_RS17130:0.1039000845,GCF_040790665.1__soxy__WP_037943596.1__AB1495_RS09435:0.1354261230):0.0146156219,GCF_025639885.1__soxy__WP_165197247.1__N7U68_RS06180:0.1340506229):0.1244132260):0.0587219206):0.0322467444):0.0286148188,(GCF_016806125.1__soxy__WP_023851826.1__GQA70_RS14060:0.2036634640,GCF_039724765.1__soxy__WP_005863280.1__ABFK29_RS16740:0.0713844997):0.2629855183):0.0329437207,((GCF_001308265.1__soxy__WP_062215876.1__IMCC12053_RS03700:0.1006923320,GCF_003544895.1__soxy__WP_118941672.1__BAR1_RS03160:0.3019375543):0.0428164277,GCF_040580765.1__soxy__WP_089890067.1__DSM117340_RS09210:0.1725959994):0.0358114606):0.0585289138,((GCF_000590925.1__soxy__WP_025312361.1__ROSELON_RS10530:0.1014637929,GCF_030407165.1__soxy__WP_290151564.1__QTA57_RS11570:0.2137683442):0.1848705801,GCF_038443675.1__soxy__WP_055295994.1__AABB28_RS01190:0.1555636356):0.1102314556):0.0358592131,(GCF_001187845.1__soxy__WP_049834220.1__OSB_RS06495:0.1690775340,GCF_005234135.1__soxy__WP_137193382.1__EOK75_RS07790:0.2315622225):0.0733046782):0.0764242786,(GCF_001620265.1__soxy__WP_066818577.1__AKL17_RS14970:0.1062980653,((GCF_008824185.1__soxy__WP_024845875.1__ESD82_RS03405:0.1797933064,GCF_029953595.1__soxy__WP_281465000.1__QF092_RS14885:0.0685350006):0.0936041972,GCF_014126615.1__soxy__WP_182308275.1__H4I97_RS18095:0.1973695766):0.1005732053):0.0906873433):0.0362573858,((GCF_000154785.2__soxy__WP_013963053.1__RLO149_RS15520:0.1131675435,GCF_014337925.2__soxy__WP_187431894.1__ROLI_RS20215:0.1094948036):0.1735787194,((GCF_004006175.1__soxy__WP_127747559.1__EBB79_RS03245:0.0529248708,GCF_030285785.1__soxy__WP_270920337.1__QPJ95_RS19750:0.0490749728):0.0492505841,((((GCF_012932215.1__soxy__WP_169641566.1__G3256_RS14825:0.1103134808,GCF_032842945.2__soxy__WP_317057515.1__RZS32_RS13620:0.0935795014):0.0000035047,GCF_047715485.1__soxy__WP_415404400.1__ACMHLQ_RS08800:0.0647553776):0.1434487574,GCF_026191725.2__soxy__WP_152500867.1__K1718_RS10455:0.0910797407):0.0566270919,GCF_044772865.1__soxy__WP_420860633.1__ACIRQ6_RS10995:0.1117922960):0.1089217238):0.1564152687):0.0933767051):0.0174418356,(GCF_002504165.1__soxy__WP_088661670.1__CBW24_RS10535:0.2221253648,GCF_029853695.1__soxy__WP_279966556.1__P8627_RS05050:0.1876842862):0.0545128422):0.0441925680,GCF_002865605.1__soxy__WP_101500230.1__CYR75_RS11905:0.3422142827):0.0668360134,GCF_001633165.1__soxy__WP_042460797.1__A6W98_RS09545:0.3319022191):0.0000040142,(GCF_001940525.2__soxy__WP_075775684.1__BMG03_RS14385:0.0147971698,GCF_002085925.2__soxy__WP_078520152.1__AKL02_RS13815:0.0000013497):0.1891224701):0.2150106267,GCF_018282095.1__soxy__WP_075700183.1__KGB56_RS04675:0.2360845128):0.0817182612,GCF_024662015.1__soxy__WP_257771097.1__NUH88_RS07555:0.3949924269):0.2380757887,(((GCF_000154705.2__soxy__WP_040449242.1__HPDFL43_RS13910:0.3083685334,(((((GCF_000192745.1__soxy__WP_013653432.1__SL003B_RS13585:0.1619988871,GCF_026898155.1__soxy__WP_407936840.1__OH818_RS03515:0.2881221707):0.0383593845,GCF_002215215.1__soxy__WP_088918115.1__IMCC3135_RS13575:0.5561587475):0.0313369188,GCF_016806835.2__soxy__WP_203096494.1__JL101_RS21065:0.2670457325):0.0791612465,(GCF_014495845.1__soxy__WP_187969819.1__IAI54_RS25335:0.2095780563,GCF_016653635.2__soxy__WP_201074587.1__IGS68_RS23560:0.6593678917):0.0791297542):0.0618536093,(GCF_000967425.1__soxy__WP_052639132.1__NT26_RS12505:0.1922320952,(GCF_001889605.1__soxy__WP_072603837.1__BSQ44_RS10545:0.1405464178,(GCF_001953055.1__soxy__WP_075996148.1__BVL55_RS06070:0.2735409236,GCF_007922615.2__soxy__WP_146301280.1__FQ775_RS13720:0.1322890810):0.0921571366):0.0500611728):0.0277915769):0.0308366871):0.0756463945,(GCF_000158095.2__soxy__WP_008191229.1__SADFL11_RS21840:0.0891445466,GCF_001999245.1__soxy__WP_023014500.1__B0E33_RS18020:0.1127254115):0.2046930931):0.0070404627,((GCF_003403095.1__soxy__WP_064789182.1__DY252_RS12530:0.2293116956,GCF_013358405.1__soxy__WP_175275479.1__HTY61_RS03390:0.1669656491):0.1101763699,GCF_009789575.1__soxy__WP_158192331.1__GH266_RS01580:0.3700123901):0.0441957972):0.1196067786):0.0755050050,((GCF_001579845.1__soxy__WP_068025939.1__RHPLAN_RS29515:0.2255445553,GCF_002355335.1__soxy__WP_096354174.1__GJW30_RS08465:0.3472815236):0.0858296613,GCF_002119765.1__soxy__WP_086090112.1__CAK95_RS23455:0.2137045228):0.1547157041):0.0000038969,(GCF_026409565.1__soxy__WP_407696691.1__OIR97_RS01950:0.4608152331,GCF_027923555.1__soxy__WP_317997153.1__WPS_RS07210:0.7236138773):0.0694779513):0.1979714237,(((GCF_000092925.1__soxy__WP_013165799.1__SNOV_RS04865:0.1781328350,GCF_016807805.1__soxy__WP_203193888.1__EZH22_RS00525:0.1865801727):0.1078322054,(GCF_018279705.1__soxy__WP_211912262.1__RPMA_RS07690:0.1434150506,GCF_030413175.1__soxy__WP_300946726.1__QUH67_RS11115:0.0857541934):0.1473177502):0.1520916766,GCF_005144885.1__soxy__WP_136963590.1__E8M01_RS30440:0.1794642328):0.2955939930):0.0709408517,GCF_029318635.1__soxy__WP_132938250.1__P3M64_RS02475:0.5785640649):0.2264599035,(GCF_000021545.1__soxy__WP_012674775.1__SULAZ_RS08225:0.3081879729,(GCF_000021565.1__soxy__WP_012675707.1__PERMA_RS09395:0.2740207635,((GCF_000183725.1__soxy__WP_013459310.1__SULKU_RS02275:0.2003454456,GCF_039645985.1__soxy__WP_345977311.1__WCY20_RS04410:0.3917631595):0.1131244976,GCF_027943725.1__soxy__WP_281951708.1__QML81_RS02955:0.4650130022):0.2839057610):0.0366156946):0.1517940282):0.1811540323):0.1969159726,(((((GCF_000092245.1__soxy__WP_013135614.1__ARNIT_RS09040:0.0341454389,GCF_042214795.1__soxy__WP_375723859.1__LXN10_RS15395:0.0105227046):0.0807514599,((GCF_003346815.1__soxy__WP_114839208.1__ABIV_RS07130:0.0962434462,(GCF_006459125.1__soxy__WP_179951800.1__AANAER_RS08130:0.0517628330,GCF_013201825.1__soxy__WP_228712195.1__AEBR_RS08175:0.0918255356):0.0843697052):0.0234959776,(GCF_013283835.1__soxy__WP_071626879.1__ALEK_RS14440:0.0491459639,GCF_024267655.1__soxy__WP_254576198.1__NJU99_RS12260:0.0768569549):0.0196269427):0.0000035047):0.0772850214,(((((GCF_003355515.1__soxy__WP_115428494.1__ATR_RS05595:0.0268628287,GCF_003660105.1__soxy__WP_105916639.1__ACRYA_RS06055:0.0153517508):0.0449563439,((((GCF_003544815.1__soxy__WP_118885715.1__ASUIS_RS03335:0.1232778163,GCF_013177675.1__soxy__WP_172125206.1__AACT_RS04105:0.0080107505):0.0738043164,GCF_013201935.1__soxy__WP_129012887.1__ACLO_RS03465:0.0213669438):0.0057314102,GCF_013177635.1__soxy__WP_129096088.1__AAQM_RS03070:0.0083259047):0.0501302679,(GCF_003544915.1__soxy__WP_118916619.1__AELL_RS03535:0.0596925251,GCF_013201725.1__soxy__WP_014473403.1__ADFLV_RS03510:0.0142231511):0.0601740111):0.1097590593):0.0430082850,(GCF_003544835.1__soxy__WP_066162316.1__ASKIR_RS02325:0.0483241730,(GCF_004214815.1__soxy__WP_066181329.1__ATH_RS07830:0.0070223068,GCF_004299785.2__soxy__WP_066171381.1__APORC_RS08275:0.0000013497):0.2162709915):0.0656136466):0.0462909702,(GCF_013201625.1__soxy__WP_026807439.1__ALANTH_RS02925:0.1438552703,(GCF_013201705.1__soxy__WP_026805907.1__AFAEC_RS03780:0.0269993105,GCF_013372265.1__soxy__WP_024775256.1__ACBT_RS04740:0.0168719092):0.0542960602):0.0453764897):0.0897126584,(GCF_003544855.1__soxy__WP_099310941.1__AMRN_RS03475:0.2086162687,GCF_003544935.1__soxy__WP_099341932.1__AMOL_RS03115:0.0806209309):0.0826616205):0.1428918269):0.0331512115,GCF_001956695.1__soxy__WP_076088216.1__LPB137_RS11525:0.0630479097):0.1846327001,GCF_000186245.1__soxy__WP_013553330.1__NITSA_RS01865:0.4580375836):0.4284990728):0.0327292366,GCF_001723605.1__soxy__WP_069478795.1__SHALO_RS12445:0.7944337281):0.1015466150,(((GCF_000153125.2__soxy__WP_023659831.1__KT71_RS02305:0.0820949509,GCF_045689245.1__soxy__WP_407327909.1__R0137_RS01195:0.0325933111):0.0349098372,GCF_045689235.1__soxy__WP_407347289.1__R0135_RS13005:0.0741495980):0.3507666132,GCF_009910365.1__soxy__WP_009576270.1__EYZ66_RS09755:0.9466922378):0.3550749048):0.1203445705,GCF_001305575.3__soxy__WP_062152279.1__AL038_RS09635:0.5369237363):0.0355828616,((((((((((((((((GCF_000015725.1__soxy__WP_036231508.1__MPE_RS12280:0.1624351742,GCF_000019785.1__soxy__WP_012348783.1__LCHO_RS18825:0.1237562740):0.0530335332,GCF_021049305.1__soxy__WP_151124204.1__LRM40_RS06595:0.1671887338):0.0000029503,GCF_023734135.1__soxy__WP_251971050.1__NGK70_RS24520:0.1472442096):0.0736949456,GCF_002222655.1__soxy__WP_089416043.1__VITFI_RS04895:0.1435570161):0.0491979767,GCF_030254645.1__soxy__WP_285235640.1__PFX98_RS19385:0.3004082983):0.0466389986,((GCF_000215705.1__soxy__WP_013900699.1__RTA_RS07065:0.2465295607,((((GCF_003008575.1__soxy__WP_106683786.1__C6568_RS08795:0.1249178103,GCF_017498525.1__soxy__WP_208010112.1__J1M35_RS04735:0.0234364412):0.0437169070,GCF_007954405.1__soxy__WP_146911462.1__FOZ74_RS01830:0.1819595958):0.1657555553,GCF_006970865.1__soxy__WP_142817510.1__EUB48_RS02735:0.1996723290):0.0368865609,GCF_019973615.1__soxy__WP_223911824.1__LDN84_RS09770:0.0876088628):0.0320933642):0.0214889924,(GCF_014395975.1__soxy__WP_187596175.1__H9K76_RS15020:0.1510667186,GCF_014489595.1__soxy__WP_187736487.1__H9L24_RS00235:0.0688792308):0.0785522290):0.0617470147):0.2107692673,(GCF_000253115.1__soxy__WP_013106572.1__THI_RS12255:0.0337602077,GCF_002028405.1__soxy__WP_079418914.1__BVH73_RS11825:0.0321289494):0.3580894672):0.1164493462,(GCF_001017435.1__soxy__WP_417903601.1__AAW51_RS11330:0.1223246716,GCF_026013905.1__soxy__WP_264891372.1__OMP39_RS08775:0.0590916041):0.2304083939):0.0416731863,GCF_050749815.1__soxy__WP_431634348.1__ACQVBX_RS12165:0.6449705531):0.0686410996,((GCF_000219915.2__soxy__WP_041709140.1__TKWG_RS07265:0.6689691186,(GCF_013004065.1__soxy__WP_105028914.1__HKT17_RS06685:0.0572268560,GCF_036323495.1__soxy__WP_130556579.1__RGQ30_RS07125:0.0384331807):0.3151668222):0.0188539541,GCF_009746125.1__soxy__WP_156863876.1__FKL89_RS16745:0.3199960316):0.0317671619):0.0641608824,(((((((((((GCF_000016345.1__soxy__WP_011902646.1__PNUC_RS04180:0.0200680770,GCF_013307225.1__soxy__WP_173955861.1__DCO17_RS06055:0.0200812008):0.0000013497,GCF_018687595.1__soxy__WP_112205038.1__AOC06_RS06915:0.0204467458):0.0070595151,GCF_018687955.1__soxy__WP_215361666.1__AOC20_RS03890:0.0264253591):0.0136134015,(GCF_000973625.1__soxy__WP_046330213.1__CL55_RS05590:0.0136154304,GCF_018688255.1__soxy__WP_215307216.1__C2747_RS05690:0.0689070547):0.0211855863):0.0159955550,GCF_003065385.1__soxy__WP_108508443.1__AOC32_RS05075:0.1261838191):0.0132251506,(GCF_001659725.1__soxy__WP_068948421.1__A8O14_RS04420:0.0463544535,GCF_900096765.1__soxy__WP_114639696.1__DXE33_RS02420:0.0778644605):0.0930776952):0.0140247834,(GCF_003065365.1__soxy__WP_108469086.1__AOC34_RS05260:0.1166808687,GCF_013307245.1__soxy__WP_173942694.1__DCO16_RS05310:0.0834507826):0.0146106377):0.0937113681,GCF_022811525.1__soxy__WP_243477911.1__DHf2319_RS09160:0.3736091967):0.1598457993,GCF_964332355.1__soxy__WP_009522856.1__ACQ3C8_RS14310:0.1368875068):0.0288421649,((((((GCF_000069785.1__soxy__WP_012354209.1__RALTA_RS14775:0.0000013497,GCF_001598055.1__soxy__WP_062795731.1__A2G96_RS00275:0.0130163025):0.0065884631,GCF_000219215.1__soxy__WP_013958319.1__CNE_RS17195:0.0063305348):0.0065571772,GCF_016894385.1__soxy__WP_063240926.1__JTE92_RS29350:0.0065826921):0.0295367325,GCF_001854325.1__soxy__WP_071010245.1__BKK80_RS00205:0.0496341318):0.0137029765,GCF_008801925.2__soxy__WP_043350495.1__F7R26_RS19405:0.0312287752):0.0967189221,(GCF_018243235.1__soxy__WP_016722440.1__GO999_RS00970:0.0000038397,GCF_024925465.1__soxy__WP_197365654.1__NY025_RS08630:0.0209323636):0.3103026361):0.1055424996):0.1200390933,((((((GCF_000807775.2__soxy__WP_039372958.1__PI93_RS23625:0.0000013497,GCF_001465595.2__soxy__WP_039372958.1__AT395_RS00940:0.0000013497):0.0065378325,GCF_001465545.3__soxy__WP_058376480.1__AT302_RS26110:0.0065393611):0.0000013497,GCF_000815105.2__soxy__WP_039406557.1__RO07_RS24365:0.0131074381):0.0000013497,GCF_000972785.3__soxy__WP_039393898.1__MB84_RS23810:0.0000013497):0.0135635882,GCF_001029105.3__soxy__WP_047906292.1__AB870_RS22050:0.0133642650):0.0000013497,GCF_000934605.2__soxy__WP_044457411.1__UC34_RS23600:0.0067228010):0.2609579441):0.0465429482):0.0227229894,((GCF_015689335.1__soxy__WP_206088501.1__IV454_RS25895:0.0456294301,GCF_045016065.1__soxy__WP_126071998.1__HF313_RS19170:0.0387789423):0.2146822536,(GCF_021165955.1__soxy__WP_231769625.1__LSQ66_RS09980:0.1171160144,GCF_900130075.1__soxy__WP_076594043.1__BQ6873_RS09185:0.1039704334):0.1227486137):0.2305040764):0.0166189431,(GCF_000022145.1__soxy__WP_011421336.1__A2CP1_RS08370:0.4149803766,((GCF_001305595.1__soxy__WP_045585669.1__AL072_RS27990:0.2123095778,GCF_040269895.1__soxy__WP_407048891.1__ABS361_RS17150:0.3239574245):0.1922279146,((GCF_002872475.1__soxy__WP_102247505.1__C0099_RS11275:0.3760324421,(GCF_008274805.1__soxy__WP_342780112.1__OTERR_RS03510:0.2957007253,(GCF_010983895.1__soxy__WP_173766465.1__G3580_RS13945:0.0718460964,GCF_017309585.1__soxy__WP_227817614.1__J0W34_RS15395:0.0954932102):0.0853741346):0.0351270677):0.0441161698,GCF_003574215.1__soxy__WP_119334856.1__HPTL_RS04200:0.4614054125):0.0780733488):0.0087563670):0.1057789678):0.0944676882,((GCF_001761385.1__soxy__WP_066085293.1__LPB072_RS18265:0.1964761798,GCF_011388215.1__soxy__WP_166223533.1__G9Q37_RS01520:0.1079143119):0.2505518452,GCF_047549485.1__soxy__WP_377301083.1__ACMDW7_RS09750:0.4991636540):0.1064727751):0.1824474441,((GCF_000025705.1__soxy__WP_013029830.1__SLIT_RS08500:0.2770679407,GCF_000297055.2__soxy__WP_041674088.1__SCD_RS11915:0.1098276418):0.1009083582,(GCF_003967275.1__soxy__WP_126462411.1__EL388_RS08565:0.2453751179,((GCF_009937995.1__soxy__WP_162083614.1__SFSGTM_RS01510:0.1778600491,GCF_009938015.1__soxy__WP_147070039.1__GZH91_RS14985:0.1839023012):0.0640813091,GCF_035621355.1__soxy__WP_324780409.1__VA613_RS03145:0.1437909006):0.0898142984):0.0601372459):0.1635479173):0.1219457517,GCF_004786015.1__soxy__WP_135795303.1__GHNINEIG_RS03170:0.3723295150):0.0311755329):0.0507762630,(GCF_008630635.1__soxy__WP_138988521.1__F0U83_RS06360:0.1967885025,(GCF_024347195.1__soxy__WP_205660002.1__PCI15_RS08345:0.0237758646,GCF_024347215.1__soxy__WP_261844541.1__OCU49_RS08455:0.0371297594):0.3137554416):0.2691295948):0.0421431777,(((((GCF_000024765.1__soxy__WP_012824922.1__HNEAP_RS10310:0.0497515975,GCF_001663815.1__soxy__WP_066101034.1__A9404_RS10105:0.0715539988):0.1997984730,GCF_034479635.1__soxy__WP_322521748.1__SR882_RS02325:0.1425379672):0.1797943184,(GCF_001753165.1__soxy__WP_070073939.1__BJI67_RS04035:0.0375807188,GCF_001753245.1__soxy__WP_070079247.1__BI364_RS13840:0.0283891701):0.3022286366):0.0688384690,GCF_009497875.2__soxy__WP_153296415.1__D5125_RS11005:0.3975826927):0.0494111578,GCF_000828615.1__soxy__WP_041068685.1__TBH_RS12115:0.3685787077):0.0427945918):0.0582376513,((((GCF_000227685.2__soxy__WP_006746493.1__THITH_RS00470:0.0473344533,GCF_000321415.2__soxy__WP_015256950.1__TVNIR_RS00360:0.0284140523):0.3338394640,GCF_047222355.1__soxy__WP_412851705.1__ACLF6L_RS11530:0.2084718003):0.1660366719,((GCF_003721225.2__soxy__WP_123102320.1__EC580_RS04170:0.1194343662,GCF_010378095.2__soxy__WP_163097775.1__GL267_RS08370:0.2321863660):0.4440765930,GCF_048300925.1__soxy__WP_211218659.1__RG903_RS03560:0.1624570234):0.3480853353):0.0528844783,GCF_009650135.1__soxy__WP_246164715.1__GH975_RS09720:0.7373716227):0.0000038799):0.0574761071,((((GCF_000025485.1__soxy__WP_012971305.1__ALVIN_RS10525:0.0646911744,GCF_011290485.1__soxy__WP_343033116.1__GWK36_RS09085:0.3632407171):0.0710450695,GCF_000227745.2__soxy__WP_014779428.1__THIVI_RS15205:0.0460094845):0.1034896730,GCF_000224005.2__soxy__WP_005221306.1__MARPU_RS13465:0.1957391152):0.0999706134,GCF_033954455.1__soxy__WP_201068850.1__Thiosp_RS02495:0.2641221090):0.2181184945):0.0492249659,GCF_000015585.1__soxy__WP_011814727.1__HHAL_RS09810:0.7440855162):0.0509241197,(((((GCF_000013885.1__soxy__WP_011512043.1__NHAM_RS18850:0.2550258779,((GCF_001693515.2__soxy__WP_065750816.1__LMTR21_RS37475:0.0904288105,(GCF_011516645.4__soxy__WP_166213480.1__HAP48_RS12960:0.0231832648,GCF_023278185.1__soxy__WP_016848046.1__JEY66_RS40780:0.0401488792):0.1219029024):0.0718444516,(((((((GCF_004114935.1__soxy__WP_128930840.1__XH85_RS03970:0.0068554509,GCF_021044685.1__soxy__WP_145638574.1__LPJ38_RS02455:0.0068927413):0.0210738164,GCF_045571495.1__soxy__WP_407186139.1__P6U31_RS34975:0.0137004065):0.0328380987,GCF_008932115.1__soxy__WP_162006373.1__F8237_RS13320:0.0256685909):0.0190402619,GCF_027594865.1__soxy__WP_270163916.1__I3J27_RS37975:0.0635352954):0.0224810418,GCF_015291705.1__soxy__WP_027563198.1__WN72_RS45665:0.0554442375):0.0097662881,(GCF_015624505.1__soxy__WP_195801141.1__IC761_RS34950:0.0492502895,GCF_049949285.1__soxy__WP_426410947.1__ACLFLU_RS03380:0.0416315308):0.0301962945):0.0114198608,GCF_041200145.1__soxy__WP_369720473.1__AB8Z38_RS25335:0.0091502014):0.0814314502):0.0428892954):0.0189842938,GCF_018736085.1__soxy__WP_215622419.1__KMZ29_RS03190:0.1446894440):0.1537790633,(GCF_000218565.1__soxy__WP_012562346.1__OCA5_RS14025:0.1109240385,GCF_029030725.1__soxy__WP_275246335.1__AFIC_RS11305:0.0479635113):0.1295379898):0.1514766173,GCF_000202835.1__soxy__WP_231844445.1__ACMV_RS16845:0.4832564082):0.1232177337,(GCF_000968535.2__soxy__WP_014147805.1__MEALZ_RS06435:0.7265764625,(GCF_001854125.1__soxy__WP_070967319.1__BKP64_RS06055:0.1389633446,GCF_017301335.1__soxy__WP_206643107.1__LPB19_RS11845:0.0796310135):0.3212104209):0.0750055139):0.1327547090):0.1528675001,GCF_033723955.1__soxy__WP_318953218.1__R5R33_RS13465:0.6213070050):0.3368071325,GCF_002795845.1__soxy__WP_100257707.1__REIFOR_RS11555:0.4039513169):0.3296836641,GCF_000020505.1__soxy__WP_012502321.1__CPAR_RS05495:0.1230150678):0.0095493364,GCF_001747405.1__soxy__WP_069809589.1__BIU88_RS05995:0.0721165268);
+
+
+USER TREES
+----------
+
+See /jinxianstor/home/xiazhiqiang1/02.work/02.2026_work/01.network_model/iMeta_3DAY_COMPUTATION_UPGRADE_20260712/results/03_topology_tests/ModelFinder/soxy/topology_test.trees for trees with branch lengths.
+
+Tree      logL    deltaL  bp-RELL    p-KH     p-SH    p-WKH    p-WSH       c-ELW       p-AU
+-------------------------------------------------------------------------------------------
+  1 -33046.35038       0       1 +      1 +      1 +      1 +      1 +         1 +        1 + 
+  2 -35936.20074  2889.9       0 -      0 -      0 -      0 -      0 -         0 - 1.36e-06 - 
+
+deltaL  : logL difference from the maximal logl in the set.
+bp-RELL : bootstrap proportion using RELL method (Kishino et al. 1990).
+p-KH    : p-value of one sided Kishino-Hasegawa test (1989).
+p-SH    : p-value of Shimodaira-Hasegawa test (2000).
+p-WKH   : p-value of weighted KH test.
+p-WSH   : p-value of weighted SH test.
+c-ELW   : Expected Likelihood Weight (Strimmer & Rambaut 2002).
+p-AU    : p-value of approximately unbiased (AU) test (Shimodaira, 2002).
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+All tests performed 10000 resamplings using the RELL method.
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t /jinxianstor/home/xiazhiqiang1/02.work/02.2026_work/01.network_model/iMeta_3DAY_COMPUTATION_UPGRADE_20260712/results/03_topology_tests/ModelFinder/soxy/topology_test.treefile -m "Q.PFAM+I{0.0499387}+R8{0.0863915,0.0498134,0.0562054,0.183454,0.0607795,0.315113,0.188033,0.623082,0.119791,0.969895,0.211847,1.28068,0.161825,1.82538,0.0651882,2.54935}" --length 155
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s /jinxianstor/home/xiazhiqiang1/02.work/02.2026_work/01.network_model/SOX_GENOME_ATLAS_R232_20260711/results/31_generax_inputs_modelselected/soxy/soxy.gtdb_shared.trimmed.faa --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s /jinxianstor/home/xiazhiqiang1/02.work/02.2026_work/01.network_model/SOX_GENOME_ATLAS_R232_20260711/results/31_generax_inputs_modelselected/soxy/soxy.gtdb_shared.trimmed.faa --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sun Jul 12 10:14:42 2026
+Total CPU time used: 338 seconds (0h:5m:38s)
+Total wall-clock time used: 65.4 seconds (0h:1m:5s)
+
